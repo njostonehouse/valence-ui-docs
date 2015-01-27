@@ -1,0 +1,10 @@
+    <div class="center">
+      &copy; Copyright 2011-2015, D2L Corporation. All rights reserved.<br>
+      Desire2Learn, D2L, and the molecule logo are trademarks of D2L Corporation, registered in the U.S. and other
+      countries.<br>
+      <a href="http://www.d2l.com/about/" target="_blank">About D2L</a>&nbsp;|&nbsp;
+      <a href="http://www.d2l.com/legal/privacy/" class="el" target="_blank">Privacy Statement</a>&nbsp;|&nbsp;
+      <a href="http://www.d2l.com/legal/terms/" class="el" target="_blank">Terms of Use</a>
+    </div>
+  </body>
+</html>

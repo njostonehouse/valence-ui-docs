@@ -1,0 +1,27 @@
+{% extends "!layout.html" %}
+{% set title = "Welcome" %}
+
+<div class="topnav">
+{%- block topnav %}
+{%- block d2lrel1 %}{%- endblock %}
+{%- block d2lrel2 %}<p>[&#160;&#160;
+<a class="uplink" href="{{ pathto('getting-started/gettingstarted') }}">Getting Started</a>&#160;&#160;&#183;&#160;&#160;
+<a class="uplink" href="{{ pathto('valence-ui-components/index') }}">Components</a>&#160;&#160;&#183;&#160;&#160;
+<a class="uplink" href="http://docs.valence.desire2learn.com/">{{ _('Valence SDK') }}</a>&#160;&#160;]</p>
+{%- endblock %}{%- endblock %}
+</div>
+
+<div class="content">
+{% block body %}
+<h1>Welcome to Valence UI</h1>
+<p>Valence UI is a library of UI components that you can use to style your application to look and feel like a native D2L Learning Environment application. </p> 
+ 
+
+
+
+
+{% endblock %}
+</div>
+<div class="bottomnav">
+{% block bottomnav %}{% endblock %}
+</div>

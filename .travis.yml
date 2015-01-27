@@ -1,0 +1,37 @@
+language: python
+python:
+- '2.7'
+before_install:
+- export COMMIT_SHA=`git log -1 --pretty=format:%H`
+install: pip install -q -r requirements.txt
+script:
+- sphinx-build -b html -d _build/doctrees . _build/html
+deploy:
+- provider: s3
+  access_key_id: $aws_key_prod
+  secret_access_key: $aws_secret_prod
+  bucket: vui-docs
+  local-dir: _build/html
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+- provider: s3
+  access_key_id: $aws_key_internal
+  secret_access_key: $aws_secret_internal
+  bucket: vui-docs-internal
+  local-dir: _build/html
+  upload-dir: ${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}
+  skip_cleanup: true
+  on:
+    tags: false
+    all_branches: true
+env:
+  global:
+  - secure: SHJX9POydUx2q/sa9DpBVz9XjPBYMQRAy/xP8kZ6Y0qVaCFcpiNjxOop9fGSZdg7xi4H5svcnliGSO6F8FEFdm7qGYhHtVAX+cUPT7DDuajsSVJEWSU9yjfxxrFXZDPL3SXHpOe/pUuqhD8zWnnjQmcs+/rNYjaVwB7jJtl5Xa4=
+  - secure: MSscKdYLjNzxrBiOFm6c8i1H0v8KLJOGbEaMRTqiasGMp9LOtqsGgJ71SjNNUvWq3kxZG8U3kxkNY2NlDZNtAX5KxVLWvVwhVZCJcQwgbN5Fu+Pm2zdQcaPQJTsVnDvsnal/ajRBZID4QobVlWAuKRg7/WtDHeIyFH+8D6X/bxs=
+  - secure: HrGYhHOCVeTaIXJ3jzRJg3OvMmj76HB/16KrCvtioP+BbLCObxNHsigMfjht1DIwyCehSAVVFwbIrrIR6TDgZFr3MiLsbPlQ3vM1PJzJvYQt1bxqeygdHLf6lXRltwr7jpn5ROBfI8fm0nt2Lex4mPUYUAZ0gumCaDkyC2ForkM=
+  - secure: QzjMWaSGH0CJW3BkNmzg6coicC4+3nZlXky95gJKnniutNvBhz1O3yfyLw/vOUjvwBMFXHnX2bzKnodXC2fFic1V4R7YjvPN12639riWk1RinZHdr150DkhoTkZxpOQpyyjc524CLu+TSycBl6IAU3bpoL/7+NTHchxWSGJi7VI=
+  - secure: jESPpOud3zw/UeyVwoYikYjbvv+vNPsuLQnz+jlkfcmsaSQ8vhlmuDZ2szp8dgu8wPymG2nce1Kvv1c3MDCaa1r1Z6UgKdgDViR7e80PSn06MbtwwMUN5s+1LNlu6C2AcrMjdQwvCaDoEbK8nsSdkQqUEgo1WR64s9ISIMVGsHM=
+after_success:
+- python sendComment.py "Published to http://vui-docs-internal.s3-website-us-east-1.amazonaws.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}"
