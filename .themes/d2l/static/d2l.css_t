@@ -58,7 +58,7 @@ div.content {
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-size: 0.9em;
 }
 
@@ -459,13 +459,17 @@ p.admonition-title {
 }
 
 
-/* -- barb adjustments --------------------------------------------------- */
+/* -- barb adjustments for vui docs ---------- */
 
 h3.docs {
     font-size: 1.1em;
     font-weight: normal;
     color: {{ theme_headingcolor }};
     margin: 0px;
+}
+
+h2.docs {
+    border-bottom:none;
 }
 
 div.admonition-accessibility {

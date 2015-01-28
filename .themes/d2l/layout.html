@@ -28,31 +28,7 @@
         </p>
 {% endmacro %}
 
-{#
 {% macro comments() %}
-    <!-- Disqus comments inclusion -->
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'd2l-valence'; // required: replace example with your forum shortname
-    {% trans pagename=pagename|e %}var disqus_identifier = '{{ pagename }}';{% endtrans %}
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-{% endmacro %}
-#}
-
-{% macro comments() %}
-<div id="comments links">
-For comments and discussions about the Valence developer platform, please visit
-our <a href="https://groups.google.com/forum/#!forum/valenceusers">ValenceUsers discussion forum on Google Groups</a>.
-</div>
 {% endmacro %}
 
 {% macro pgbottom() %}
