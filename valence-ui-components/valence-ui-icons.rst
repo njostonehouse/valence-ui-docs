@@ -19,7 +19,7 @@ The `vui-icons <https://www.npmjs.com/browse/keyword/vui>`_ library provides Les
 *******************
 Styling with Less 
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, add icons to your with our Less mixins.  First, you'll need to import the following library into your LESS file:
+If you're familiar with `Less <http://lesscss.org/>`_, add icons to your app with our Less mixins.  First, you'll need to import the following library into your LESS file:
 
 .. code-block:: console
 
@@ -31,10 +31,7 @@ LESS:
 
 .. code-block:: css
 
-	.icon-filePdf,
-	.icon-filePdfLarge,
-	.icon-filePdfXLarge
-	{
+	[class^=icon] {
 	    #vui.Icon();
 	}
 
