@@ -51,10 +51,10 @@ HTML:
 *******************
 Styling with CSS
 *******************
-If you prefer to use CSS to style elements, bundle the **breadcrumbs.css** file with your application's CSS. Then apply the ``.vui-breadcrumbs`` class to your breadcrumb container, which is typically an orderer list.
+If you prefer to use CSS to style elements, bundle the **breadcrumbs.css** file with your application's CSS. Then apply the ``.vui-breadcrumbs`` class to your breadcrumb container, which is typically an ordered list.
 
 .. role:: example
-	
+
 :example:`Example`
 
 .. raw:: html
