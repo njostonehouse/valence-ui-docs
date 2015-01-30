@@ -28,7 +28,7 @@ To apply default text styling in Less, call the ``#vui.Typography()`` mixin from
 	
 	@import 'node_modules/vui-typography/typography';
 
-	p {
+	body {
 	    #vui.Typography();
 	}
 
@@ -39,9 +39,9 @@ your application's CSS. Then apply the ``.vui-typography`` class to the block-le
 
 .. code-block:: html
 
-	<p class="vui-typography">
+	<body class="vui-typography">
 	    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-	</p>
+	</body>
 
 *********************
 Headings
