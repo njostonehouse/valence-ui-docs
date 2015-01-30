@@ -198,7 +198,7 @@ Less:
         #vui.FieldRow();
     }
 
-    .myFieldRow label {
+    .myFieldRow > label {
         #vui.Label();
     }
 
