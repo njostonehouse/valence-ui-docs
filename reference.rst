@@ -11,7 +11,6 @@
    valence-ui-components/valence-ui-jquery-collapsible-section
    valence-ui-components/valence-ui-focus
    valence-ui-components/valence-ui-form
-   valence-ui-components/valence-ui-gradient
    valence-ui-components/valence-ui-icons
    valence-ui-components/valence-ui-link
    valence-ui-components/valence-ui-list

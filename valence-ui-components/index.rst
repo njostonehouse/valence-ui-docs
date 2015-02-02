@@ -19,8 +19,6 @@ Here are the available Valence UI components:
       - Styles for form elements including: text inputs, fields, labels, fieldsets, and required fields.
     * - :doc:`Focus <valence-ui-focus>`
       - A visual outline style for indicating which element has focus.
-    * - :doc:`Gradient <valence-ui-gradient>`
-      - A Less mixin to create vertical and horizontal CSS gradients.
     * - :doc:`Icons <valence-ui-icons>`
       - Icons for files, actions, and properties. 
     * - :doc:`Links <valence-ui-link>`
