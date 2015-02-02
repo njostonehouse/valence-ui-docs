@@ -5,9 +5,9 @@ Accordion
 The `vui-accordion-jquery <https://www.npmjs.com/browse/keyword/vui>`_ library provides a jQuery-based widget that displays a panel that when clicked, expands or collapses the associated content.
 
 .. raw:: html
-    
+
     <div class="vui-typography">
-    <div class="jaccordion vui-accordion" >
+    <div class="vui-accordion" >
         <div class="vui-accordion-header" data-content-labelledby="panel1">
             <h3 class="docs" id="panel1">Accordion 1</h3>
         </div>
@@ -37,13 +37,13 @@ By default, ``<div>`` elements marked up with ``.vui-accordion`` assume the disp
 To initialize the accordion, in your JavaScript call the ``vui_accordion()`` function on the container for the accordion.
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
-    
+
     <div class="vui-typography">
-    <div class=" jaccordion vui-accordion" >
+    <div class="vui-accordion" >
         <div class="vui-accordion-header" data-content-labelledby="candy1930s">
             <h3 class="docs" id="candy1930s">1930s Candy</h3>
         </div>
@@ -69,8 +69,8 @@ To initialize the accordion, in your JavaScript call the ``vui_accordion()`` fun
 Here's the HTML:
 
 .. code-block:: html
-    
-    <div class="jaccordion vui-accordion" >
+
+    <div class="vui-accordion" >
         <div class="vui-accordion-header" data-content-labelledby="candy1930s">
             <h3 class="docs" id="candy1930s">1930s Candy</h3>
         </div>
@@ -97,7 +97,7 @@ Here's the HTML:
     <script src="node_modules/vui-accordion-jquery/accordion.js"></script>
     <script>
         $(function () {
-            $( '.jaccordion' ).vui_accordion();
+            $( '.vui-accordion' ).vui_accordion();
         });
     </script>
 
@@ -107,15 +107,15 @@ Stacked Mode
 More than one panel can be expanded at a time by setting ``data-display-mode="stacked"`` on the element identified as the Accordion.
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
 
     <div class="vui-typography">
-        <div class="jaccordion vui-accordion" data-display-mode="stacked">
-            <div class="vui-accordion-header" data-content-labelledby="candy1950s">   
-           <div class="vui-accordion-header-content">             
+        <div class="vui-accordion" data-display-mode="stacked">
+            <div class="vui-accordion-header" data-content-labelledby="candy1950s">
+           <div class="vui-accordion-header-content">
                 <h3 class="docs" id="candy1950s"><a href="http://www.d2l.com">1950s Candy</a></h3>
             </div>
             </div>
@@ -153,9 +153,9 @@ More than one panel can be expanded at a time by setting ``data-display-mode="st
 Here's the HTML:
 
 .. code-block:: html
-    
-    <div class="jaccordion vui-accordion" data-display-mode="stacked">
-        <div class="vui-accordion-header" data-content-labelledby="candy1950s">                
+
+    <div class="vui-accordion" data-display-mode="stacked">
+        <div class="vui-accordion-header" data-content-labelledby="candy1950s">
             <h3 class="docs" id="candy1950s">1950s Candy</h3>
         </div>
         <div class="vui-accordion-content">
@@ -192,7 +192,6 @@ Here's the HTML:
 
      <script>
         $(function () {
-            $( '.jaccordion' ).vui_accordion();
+            $( '.vui-accordion' ).vui_accordion();
         });
     </script>
-    
