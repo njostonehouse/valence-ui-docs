@@ -9,30 +9,29 @@ Off-screen elements are valuable from an accessibility perspective when you want
 *********************
 Styling with Less 
 *********************
-If you're familiar with `Less <http://lesscss.org/>`_, you can add off-screen styles with our Less mixins.  First, you'll need to import the following library into your LESS file:
+If you're familiar with `Less <http://lesscss.org/>`_, you can add off-screen styles with our Less mixins.  First, you'll need to import the following library into your Less file:
 
 .. code-block:: console
-	
-	@import 'node_modules/vui-offscreen/offscreen';
 
-To position an element offscreen, call the ``#vui.offscreen()`` mixin from
-within your selector.
+  @import 'node_modules/vui-offscreen/offscreen';
 
-LESS: 
+To position an element offscreen, call the ``#vui.offscreen()`` mixin from within your selector.
+
+Less: 
 
 .. code-block:: css
 
-	.offscreen {
-	    #vui.offscreen();
-	}
+  .offscreen {
+    #vui.offscreen();
+  }
 
 HTML: 
 
 .. code-block:: html
 
-	<p class="offscreen">
-	    This text will only be visible to screen readers.
-	</p>
+  <p class="offscreen">
+    This text will only be visible to screen readers.
+  </p>
 
 
 *********************
@@ -44,6 +43,6 @@ HTML:
 
 .. code-block:: html
 
-	<p class="vui-offscreen">
-	    This text will only be visible to screen readers.
-	</p>
+  <p class="vui-offscreen">
+    This text will only be visible to screen readers.
+  </p>

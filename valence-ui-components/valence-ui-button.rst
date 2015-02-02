@@ -18,7 +18,7 @@ The `vui-button <https://www.npmjs.com/browse/keyword/vui>`_ library contains Le
 *******************
 Styling with Less 
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with our Less mixins.  First, you'll need to import the button library into your LESS file:
+If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with our Less mixins.  First, you'll need to import the button library into your Less file:
 
 .. code-block:: console
 	
@@ -26,17 +26,16 @@ If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with o
 
 To apply button styling to an element, call the ``#vui.button()`` mixin from within your CSS selector. You can also make an element a primary button by calling the ``#vui.button.primary()`` mixin.
 
-LESS:
+Less:
 
 .. code-block:: css
 
-	button, input[type=button]   {
-	    #vui.button();
-	}
-
-	button.primary {
-	    #vui.button.primary();
-	}
+  button, input[type=button] {
+    #vui.button();
+  }
+  button.primary {
+    #vui.button.primary();
+  }
 
 HTML:
 
@@ -57,10 +56,10 @@ HTML:
 
 .. code-block:: html
 
-	<button class="vui-button vui-primary">Button 1</button>
-	<button class="vui-button">Button 2</button>
-	<input class="vui-button" type="button" value="Button 3" /> 
-	<button class="vui-button" disabled="disabled">Button 4</button>
+  <button class="vui-button vui-primary">Button 1</button>
+  <button class="vui-button">Button 2</button>
+  <input class="vui-button" type="button" value="Button 3" /> 
+  <button class="vui-button" disabled="disabled">Button 4</button>
 
 
 *******************
@@ -74,70 +73,70 @@ To include an icon inside a button, add a ``<span>`` element inside the button a
 
 .. raw:: html
 
-	<div class="vui-field-row">
- 		<button class="vui-button">
-			<span class="vui-icon-bookmark"></span> Bookmark
-		</button>
-		<button class="vui-button">
-        	<span class="vui-icon-edit"></span> Edit
-        </button>
-    </div>
-	<div class="vui-field-row">        
-		<button class="vui-button">
-			<span class="vui-icon-bookmark"></span>
-			<span class="vui-offscreen">Bookmark</span>
-		</button>
-		<button class="vui-button">
-        	<span class="vui-icon-edit"></span>
-        	<span class="vui-offscreen">Edit</span>
-        </button>
-    </div>
+  <div class="vui-field-row">
+    <button class="vui-button">
+      <span class="vui-icon-bookmark"></span> Bookmark
+    </button>
+    <button class="vui-button">
+      <span class="vui-icon-edit"></span> Edit
+    </button>
+  </div>
+  <div class="vui-field-row">        
+    <button class="vui-button">
+      <span class="vui-icon-bookmark"></span>
+      <span class="vui-offscreen">Bookmark</span>
+    </button>
+    <button class="vui-button">
+      <span class="vui-icon-edit"></span>
+      <span class="vui-offscreen">Edit</span>
+    </button>
+  </div>
 
 .. admonition::  Accessibility
 
     Always provide text for buttons even if the button is simply an icon.  You can achieve this by providing off-screen text, which can be interpreted by assistive technologies. For more information, see :doc:`Off-screen <../valence-ui-components/valence-ui-offscreen>`.
 
-LESS:
+Less:
 
 .. code-block:: css
 
-	.icon-bookmark,
-	.icon-edit,
-	{
-	    #vui.Icon();
-	}
+  .icon-bookmark,
+  .icon-edit,
+  {
+    #vui.Icon();
+  }
+  
+  .icon-bookmark {
+    #vui.Icon.actionBookmark();  
+  }
 
-	.icon-bookmark {
-	    #vui.Icon.actionBookmark();  
-	}
-
-	.icon-edit {
-	    #vui.Icon.actionEdit();  
-	}
+  .icon-edit {
+    #vui.Icon.actionEdit();  
+  }
 
 
-HTML using LESS:
+HTML using Less:
 
 .. code-block:: html
 
-	<button>
-	    <span class="icon-bookmark"></span>
-	    <span class="offscreen">Bookmark</span>
-	</button>
-	<button>
-	    <span class="icon-edit"></span>
-	    Edit
-	</button>
+  <button>
+    <span class="icon-bookmark"></span>
+    <span class="offscreen">Bookmark</span>
+  </button>
+  <button>
+    <span class="icon-edit"></span>
+    Edit
+  </button>
 
 HTML using plain CSS:
 
 .. code-block:: html
 
-	<button class="vui-button">
-	    <span class="vui-icon-bookmark"></span>
-	    <span class="vui-offscreen">Bookmark</span>
-	</button>
-	<button class="vui-button">
-	    <span class="vui-icon-edit"></span>
-	    Edit
-	</button>
+  <button class="vui-button">
+    <span class="vui-icon-bookmark"></span>
+    <span class="vui-offscreen">Bookmark</span>
+  </button>
+  <button class="vui-button">
+    <span class="vui-icon-edit"></span>
+    Edit
+  </button>

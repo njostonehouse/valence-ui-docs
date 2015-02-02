@@ -9,31 +9,31 @@ In most cases, you'll want to use this library on elements which do not already 
 *******************
 Styling with Less 
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, use our Less mixins to apply focus styling to elements. First, you'll need to import the focus library into your LESS file:
+If you're familiar with `Less <http://lesscss.org/>`_, use our Less mixins to apply focus styling to elements. First, you'll need to import the focus library into your Less file:
 
 .. code-block:: console
 
-    @import 'node_modules/vui-focus/focus';
+  @import 'node_modules/vui-focus/focus';
 
 Call the ``#vui.focusOutline()`` mixin from your CSS selector, usually with the ``focus`` pseudo-selector applied:
 
 .. code-block:: css
 
   a:focus {
-      #vui.focusOutline();
+    #vui.focusOutline();
   }
 
-The outline width, color, style, and offset values can also be overriden when calling the ``#vui.focusOutline()`` mixin:
+The outline width, color, style, and offset values can also be overridden when calling the ``#vui.focusOutline()`` mixin:
 
 .. code-block:: css
 
   a:focus {
-      #vui.focusOutline(
-          @width: 2px,
-          @color: #00FF00,
-          @style: solid,
-          @offset: 2px
-      );
+    #vui.focusOutline(
+      @width: 2px,
+      @color: #00FF00,
+      @style: solid,
+      @offset: 2px
+    );
   }
 
 To customize the focus mixin, the following global variables are exposed:

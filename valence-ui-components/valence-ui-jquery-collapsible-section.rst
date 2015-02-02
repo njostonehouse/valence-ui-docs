@@ -10,46 +10,46 @@ The `vui-collapsible-section-jquery <https://www.npmjs.com/browse/keyword/vui>`_
 
 .. raw:: html
 
-        <div style="margin-left:2em;">
-	    <h4 class="vui-heading-collapsible" data-target="collapse01">
-	        Collapsible section: Expanded by default
-	    </h4>
-	    <div id="collapse01">
-            This section is expanded and so you can read all the details that pertain to this section.
-	    </div>
-	    <h4 class="vui-heading-collapsible" data-target="collapse02">
-	        Collapsible section: Collapsed by default
-	    </h4>
-	    <div id="collapse02" style="display:none;">
-            This section is collapsed by default. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-	    </div>
-        </div>
+  <div style="margin-left:2em;">
+    <h4 class="vui-heading-collapsible" data-target="collapse01">
+      Collapsible section: Expanded by default
+    </h4>
+    <div id="collapse01">
+      This section is expanded and so you can read all the details that pertain to this section.
+    </div>
+    <h4 class="vui-heading-collapsible" data-target="collapse02">
+      Collapsible section: Collapsed by default
+    </h4>
+    <div id="collapse02" style="display:none;">
+      This section is collapsed by default. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+  </div>
 
 Here's the HTML:
 
 .. code-block:: html
 
-    <h4 class="vui-heading-collapsible" data-target="collapse01">
-        Collapsible section: Expanded by default
-    </h4>
-    <div id="collapse01">
-        This section is expanded and so you can read all the details that pertain to this section.
-    </div>
-    <h4 class="vui-heading-collapsible" data-target="collapse02">
-        Collapsible section: Collapsed by default
-    </h4>
-    <div id="collapse02" style="display:none;">
-        This section is collapsed by default. Lorem Ipsum ...
-    </div>
+  <h4 class="vui-heading-collapsible" data-target="collapse01">
+    Collapsible section: Expanded by default
+  </h4>
+  <div id="collapse01">
+    This section is expanded and so you can read all the details that pertain to this section.
+  </div>
+  <h4 class="vui-heading-collapsible" data-target="collapse02">
+    Collapsible section: Collapsed by default
+  </h4>
+  <div id="collapse02" style="display:none;">
+    This section is collapsed by default. Lorem Ipsum ...
+  </div>
 
-    ...
+  ...
 
-    <script src="node_modules/vui-collapsible-section-jquery/collapsibleSection.js"></script>
-    <script>
-        $(function () {
-            $( '.vui-heading-collapsible' ).vui_collapsibleSection();
-        });
-    </script>
+  <script src="node_modules/vui-collapsible-section-jquery/collapsibleSection.js"></script>
+  <script>
+    $(function () {
+      $( '.vui-heading-collapsible' ).vui_collapsibleSection();
+    });
+  </script>
 
 
 A collapsible section is comprised of a heading and content. To create a collapsible section, you need to:

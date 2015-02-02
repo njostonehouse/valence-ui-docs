@@ -16,9 +16,9 @@ You can apply default text styling to a block-level element (for example, ``<bod
 
 .. raw:: html
     
-    <p class="vui-typography">
-    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</p>
+  <p class="vui-typography">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
 
 Styling with Less 
 ==================
@@ -26,22 +26,21 @@ To apply default text styling in Less, call the ``#vui.Typography()`` mixin from
 
 .. code-block:: css
 	
-	@import 'node_modules/vui-typography/typography';
+  @import 'node_modules/vui-typography/typography';
 
-	body {
-	    #vui.Typography();
-	}
+  body {
+    #vui.Typography();
+  }
 
 Styling with CSS 
 ==================
-If you'd prefer to use CSS, bundle the **typography.css** file with
-your application's CSS. Then apply the ``.vui-typography`` class to the block-level element.
+If you'd prefer to use CSS, bundle the **typography.css** file with your application's CSS. Then apply the ``.vui-typography`` class to the block-level element.
 
 .. code-block:: html
 
-	<body class="vui-typography">
-	    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-	</body>
+  <body class="vui-typography">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
+  </body>
 
 *********************
 Headings
@@ -54,21 +53,21 @@ Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element 
 
 .. raw:: html
 
-	<div class="vui-typography">
-	    <h1 style="border-bottom:none;" class="vui-heading-1">Heading Style 1</h1>
-	    <h2 style="border-bottom:none;" class="vui-heading-2">Heading Style 2</h2>
-	    <h3 style="border-bottom:none;" class="vui-heading-3">Heading Style 3</h3>
-	    <h4 style="border-bottom:none;" class="vui-heading-4">Heading Style 4</h4>
-	</div>
+  <div class="vui-typography">
+    <h1 style="border-bottom:none;" class="vui-heading-1">Heading Style 1</h1>
+    <h2 style="border-bottom:none;" class="vui-heading-2">Heading Style 2</h2>
+    <h3 style="border-bottom:none;" class="vui-heading-3">Heading Style 3</h3>
+    <h4 style="border-bottom:none;" class="vui-heading-4">Heading Style 4</h4>
+  </div>
 
 
 .. admonition::  Accessibility
 
-    Your page should always contain a single ``<h1>`` element.
+  Your page should always contain a single ``<h1>`` element.
 
-    Heading levels should increase with your page's semantic structure, never skipping a level.
+  Heading levels should increase with your page's semantic structure, never skipping a level.
 
-    For additional information, see `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_.
+  For additional information, see `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_.
 
 Styling with Less 
 ==================
@@ -76,23 +75,23 @@ To apply heading styles with Less, call the ``#vui-Heading1()`` - ``#vui-Heading
 
 .. code-block:: css
 
-	@import 'node_modules/vui-typography/typography';
+  @import 'node_modules/vui-typography/typography';
 
-	h1 {
-	    #vui.Heading1();
-	}
+  h1 {
+    #vui.Heading1();
+  }
 
-	h2 {
-	    #vui.Heading2();
-	}
+  h2 {
+    #vui.Heading2();
+  }
 
-	h3 {
-	    #vui.Heading3();
-	}
+  h3 {
+    #vui.Heading3();
+  }
 
-	h4 {
-	    #vui.Heading4();
-	}
+  h4 {
+    #vui.Heading4();
+  }
 
 Styling with CSS 
 ==================
@@ -100,12 +99,12 @@ To apply heading styles with plain CSS, add the appropriate ``.vui-heading-*`` c
 
 .. code-block:: html
 
-	<div class="vui-typography">
-	    <h1 class="vui-heading-1">Heading Style 1</h1>
-	    <h2 class="vui-heading-2">Heading Style 2</h2>
-	    <h3 class="vui-heading-3">Heading Style 3</h3>
-	    <h4 class="vui-heading-4">Heading Style 4</h4>
-	</div>
+  <div class="vui-typography">
+    <h1 class="vui-heading-1">Heading Style 1</h1>
+    <h2 class="vui-heading-2">Heading Style 2</h2>
+    <h3 class="vui-heading-3">Heading Style 3</h3>
+    <h4 class="vui-heading-4">Heading Style 4</h4>
+  </div>
 
 *********************
 Emphasis
@@ -118,11 +117,11 @@ Emphasis can be added to any text elements (for example, ``<p>`` and ``<span>``)
 
 .. raw:: html
 
-	<div class="vui-typography">
-	    <p class="vui-emphasis">
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    </p>
-	</div>
+  <div class="vui-typography">
+    <p class="vui-emphasis">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
 
 Styling with Less 
 ==================
@@ -130,9 +129,9 @@ To apply the emphasis style with Less, call the ``#vui.Typography.emphasis()`` m
 
 .. code-block:: css
 
-	.emphasis {
-	    #vui.Typography.emphasis();
-	}
+  .emphasis {
+    #vui.Typography.emphasis();
+  }
 
 
 Styling with CSS 
@@ -141,9 +140,9 @@ To apply the emphasis style with CSS, add the ``.vui-emphasis`` class to the tex
 
 .. code-block:: html
 
-	<p class="vui-emphasis">
-	    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-	</p>
+  <p class="vui-emphasis">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
+  </p>
 
 *********************
 Help
@@ -156,11 +155,11 @@ The "help" style can be applied to any text elements (for example, ``<p>`` and `
 
 .. raw:: html
 
-	<div class="vui-typography">
-	    <p class="vui-help">
-	        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod... tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	    </p>
-	</div>
+  <div class="vui-typography">
+    <p class="vui-help">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod... tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
 
 Styling with Less 
 ==================
@@ -168,9 +167,9 @@ To apply the help style with Less, call the ``#vui.Typography.help()`` mixin wit
 
 .. code-block:: css
 
-	.help {
-	    #vui.Typography.help();
-	}
+  .help {
+    #vui.Typography.help();
+  }
 
 Styling with CSS 
 ==================
@@ -178,6 +177,6 @@ To apply the help style with CSS, add the ``.vui-help`` class to the text elemen
 
 .. code-block:: html
 
-	<p class="vui-help">
-	    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-	</p>
+  <p class="vui-help">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
+  </p>
