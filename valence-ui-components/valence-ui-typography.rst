@@ -15,10 +15,12 @@ You can apply default text styling to a block-level element (for example, ``<bod
 :example:`Example`
 
 .. raw:: html
-    
-  <p class="vui-typography">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+
+  <div class="vuiexamplebox">    
+    <p class="vui-typography">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
 
 Styling with Less 
 ==================
@@ -26,7 +28,7 @@ To apply default text styling in Less, call the ``#vui.Typography()`` mixin from
 
 .. code-block:: css
 	
-  @import 'node_modules/vui-typography/typography';
+  @import '<npm module path>/vui-typography/typography';
 
   body {
     #vui.Typography();
@@ -53,11 +55,13 @@ Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element 
 
 .. raw:: html
 
-  <div class="vui-typography">
-    <h1 style="border-bottom:none;" class="vui-heading-1">Heading Style 1</h1>
-    <h2 style="border-bottom:none;" class="vui-heading-2">Heading Style 2</h2>
-    <h3 style="border-bottom:none;" class="vui-heading-3">Heading Style 3</h3>
-    <h4 style="border-bottom:none;" class="vui-heading-4">Heading Style 4</h4>
+  <div class="vuiexamplebox">  
+    <div class="vui-typography">
+      <h1 style="border-bottom:none;" class="vui-heading-1">Heading Style 1</h1>
+      <h2 style="border-bottom:none;" class="vui-heading-2">Heading Style 2</h2>
+      <h3 style="border-bottom:none;" class="vui-heading-3">Heading Style 3</h3>
+      <h4 style="border-bottom:none;" class="vui-heading-4">Heading Style 4</h4>
+    </div>
   </div>
 
 
@@ -75,7 +79,7 @@ To apply heading styles with Less, call the ``#vui-Heading1()`` - ``#vui-Heading
 
 .. code-block:: css
 
-  @import 'node_modules/vui-typography/typography';
+  @import '<npm module path>/vui-typography/typography';
 
   h1 {
     #vui.Heading1();
@@ -117,10 +121,11 @@ Emphasis can be added to any text elements (for example, ``<p>`` and ``<span>``)
 
 .. raw:: html
 
+  <div class="vuiexamplebox">
   <div class="vui-typography">
-    <p class="vui-emphasis">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <span class="vui-emphasis">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+  </div>
   </div>
 
 Styling with Less 
@@ -140,9 +145,9 @@ To apply the emphasis style with CSS, add the ``.vui-emphasis`` class to the tex
 
 .. code-block:: html
 
-  <p class="vui-emphasis">
+  <span class="vui-emphasis">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-  </p>
+  </span>
 
 *********************
 Help
@@ -155,10 +160,12 @@ The "help" style can be applied to any text elements (for example, ``<p>`` and `
 
 .. raw:: html
 
+  <div class="vuiexamplebox">
   <div class="vui-typography">
-    <p class="vui-help">
+    <span class="vui-help">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod... tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    </span>
+  </div>
   </div>
 
 .. admonition::  Accessibility
@@ -184,6 +191,6 @@ To apply the help style with CSS, add the ``.vui-help`` class to the text elemen
 
 .. code-block:: html
 
-  <p class="vui-help">
+  <span class="vui-help">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-  </p>
+  </span>

@@ -472,6 +472,10 @@ h2.docs {
     border-bottom:none;
 }
 
+h4.docs {
+    margin-top: 0;
+}
+
 div.admonition-accessibility {
     padding: 10px 15px 10px 15px;
     background: #e4ffde;
@@ -531,6 +535,14 @@ div.content .vui-docs-icons > ul > li {
 div.content .vui-docs-example > ul > li {
     background: none;
     width: 50%;
+}
+
+/* ---- Style for bordered box around examples  --- */
+div.vuiexamplebox {
+    border: 1px solid #ddd;
+    background-color:#FAFAFA;
+    padding: 19px 19px 19px;
+    border-radius: 4px;
 }
 
 

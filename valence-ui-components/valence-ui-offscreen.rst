@@ -13,7 +13,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, you can add off-screen st
 
 .. code-block:: console
 
-  @import 'node_modules/vui-offscreen/offscreen';
+  @import '<npm module path>/vui-offscreen/offscreen';
 
 To position an element offscreen, call the ``#vui.offscreen()`` mixin from within your selector.
 
@@ -38,8 +38,6 @@ HTML:
 Styling with CSS 
 *********************
 If you'd prefer to use CSS to style lists, bundle the provided **offscreen.css** file with your application's CSS. Then apply the ``.vui-offscreen`` class to your element.
-
-HTML: 
 
 .. code-block:: html
 

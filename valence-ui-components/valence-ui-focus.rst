@@ -13,7 +13,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, use our Less mixins to ap
 
 .. code-block:: console
 
-  @import 'node_modules/vui-focus/focus';
+  @import '<npm module path>/vui-focus/focus';
 
 Call the ``#vui.focusOutline()`` mixin from your CSS selector, usually with the ``focus`` pseudo-selector applied:
 

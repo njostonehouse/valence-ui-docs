@@ -10,29 +10,31 @@ The `vui-change-tracking-jquery <https://www.npmjs.com/browse/keyword/vui>`_ lib
 
 .. raw:: html
 
-  <form data-track-changes="true">
-    <div class="tracker vui-field-row">
-      <label class="vui-label">
-        Project
-        <input class="input-tracking vui-input" type="text" />
-      </label>
-    </div>
-    <fieldset class="tracker vui-field-row">
-      <legend class="vui-label">Styles</legend>
-        <label>
-          <input class="input-tracking" type="radio" name="styleGroup" checked="checked" />
-          Contemporary
+  <div class="vuiexamplebox">
+    <form data-track-changes="true">
+      <div class="tracker vui-field-row">
+        <label class="vui-label">
+          Project
+          <input class="input-tracking vui-input" type="text" />
         </label>
-        <label>
-          <input class="input-tracking" type="radio"name="styleGroup" value="modern" />
-          Modern
-        </label>
-        <label>
-          <input class="input-tracking" type="radio"name="styleGroup" value="traditional" />
-          Traditional
-        </label>
-    </fieldset>
-  </form>
+      </div>
+      <fieldset class="tracker vui-field-row">
+        <legend class="vui-label">Styles</legend>
+          <label>
+            <input class="input-tracking" type="radio" name="styleGroup" checked="checked" />
+            Contemporary
+          </label>
+          <label>
+            <input class="input-tracking" type="radio"name="styleGroup" value="modern" />
+            Modern
+          </label>
+          <label>
+            <input class="input-tracking" type="radio"name="styleGroup" value="traditional" />
+            Traditional
+          </label>
+      </fieldset>
+    </form>
+  </div>
 
 Here's the HTML:
 
@@ -57,8 +59,8 @@ Here's the HTML:
     
   ...
     
-  <script src="node_modules/vui-change-tracking-jquery/changeTracking.js"></script>
-  <script src="node_modules/vui-change-tracking-jquery/changeTracker.js"></script>
+  <script src="<npm module path>/vui-change-tracking-jquery/changeTracking.js"></script>
+  <script src="<npm module path>/vui-change-tracking-jquery/changeTracker.js"></script>
   <script>
     $(function () {
       $( '.tracker' ).vui_changeTracker();
@@ -87,7 +89,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, you can apply the change 
 
 .. code-block:: console
 
-  @import 'node_modules/vui-change-tracking-jquery/changeTracking'; 
+  @import '<npm module path>/vui-change-tracking-jquery/changeTracking'; 
 
 Then call the ``#vui.changed()`` mixin within the ``.vui-changed`` class selector: 
 
@@ -114,15 +116,17 @@ The change-tracking state can be reset for one or more elements by triggering th
 
 .. raw:: html
 
-  <div id="tracking_container" data-track-changes="true">
-    <div class="tracker vui-field-row">
-      <label class="vui-label">
-        Reset Example
-        <input class="input-tracking vui-input" type="text">    
-      </label> 
+  <div class="vuiexamplebox">
+    <div id="tracking_container" data-track-changes="true">
+      <div class="tracker vui-field-row">
+        <label class="vui-label">
+          Reset Example
+          <input class="input-tracking vui-input" type="text">    
+        </label> 
+      </div>
     </div>
+    <button class="vui-button" onclick="$( '#tracking_container' ).trigger( 'vui-reset' );" value="Reset">Reset</button>
   </div>
-  <button class="vui-button" onclick="$( '#tracking_container' ).trigger( 'vui-reset' );" value="Reset">Reset</button>
 
 HTML:
 

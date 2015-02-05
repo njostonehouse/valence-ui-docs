@@ -17,6 +17,7 @@ The `vui-input <https://www.npmjs.com/browse/keyword/vui>`_ library contains Les
 
 .. raw:: html
     
+  <div class="vuiexamplebox">
   <div class="vui-field-row">
     <input style="width:200px;" class="vui-input" type="text" value="Some text" />
     <input style="width:200px;"class="vui-input" type="password" value="my password" />
@@ -45,6 +46,7 @@ The `vui-input <https://www.npmjs.com/browse/keyword/vui>`_ library contains Les
       <option>Option 6</option>
     </select>
   </div>
+  </div>
 
 Styling with Less 
 ==================
@@ -52,9 +54,9 @@ To apply styling to text inputs with Less, first import the following libraries 
 
 .. code-block:: console
 
-  @import 'node_modules/vui-input/input';
-  @import 'node_modules/vui-input/textarea';
-  @import 'node_modules/vui-input/select';
+  @import '<npm module path>/vui-input/input';
+  @import '<npm module path>/vui-input/textarea';
+  @import '<npm module path>/vui-input/select';
 
 
 Styles can be applied to ``<input>``, ``<textarea>`` and ``<select>`` elements by calling the ``#vui.Input()``, ``#vui.Input.textarea()``, ``#vui.Input.select()`` mixins, respectively.
@@ -113,8 +115,6 @@ Styling with CSS
 ==================
 To style text inputs with CSS, apply the ``.vui-input`` class to the  ``<input>``, ``<textarea>`` and ``<select>`` elements.
 
-HTML:
-
 .. code-block:: html
 
   <div class="vui-field-row">
@@ -162,17 +162,19 @@ The `vui-field <https://www.npmjs.com/browse/keyword/vui>`_ library contain a se
 
 .. raw:: html
     
-  <div class="vui-field-row">
-    <label class="vui-label">
-      Name
-      <input type="text" class="vui-input" placeholder="Enter your name" />
-    </label>
-  </div>
-  <div class="vui-field-row">
-    <label class="vui-label">
-      Email
-      <input type="email" class="vui-input" id="email" placeholder="Enter your email" />
-    </label>
+  <div class="vuiexamplebox">
+    <div class="vui-field-row">
+      <label class="vui-label">
+        Name
+        <input type="text" class="vui-input" placeholder="Enter your name" />
+      </label>
+    </div>
+    <div class="vui-field-row">
+      <label class="vui-label">
+        Email
+        <input type="email" class="vui-input" id="email" placeholder="Enter your email" />
+      </label>
+    </div>
   </div>
 
 Styling with Less 
@@ -181,8 +183,8 @@ If you're familiar with `Less <http://lesscss.org/>`_, style your fields and lab
 
 .. code-block:: console
     
-  @import 'node_modules/vui-field/label';
-  @import 'node_modules/vui-field/field';
+  @import '<npm module path>/vui-field/label';
+  @import '<npm module path>/vui-field/field';
 
 
 Form fields (checkboxes, text inputs, etc.) can be grouped by calling the 
@@ -229,8 +231,6 @@ If you'd prefer to use CSS instead of Less, you can group and stack form fields 
 
 The ``.vui-field-row`` class gives the field a standard bottom margin.
 
-HTML:
-
 .. code-block:: html
 
   <div class="vui-field-row">
@@ -257,11 +257,13 @@ The `vui-field <https://www.npmjs.com/browse/keyword/vui>`_ library contain Less
 
 .. raw:: html
     
-  <div class="vui-field-row">
-    <label class="vui-label">
-      <span class="vui-required">Name</span>
-        <input class="vui-input" type="text" placeholder="Enter your name" aria-required="true" required  />
-    </label>        
+  <div class="vuiexamplebox">
+    <div class="vui-field-row">
+      <label class="vui-label">
+        <span class="vui-required">Name</span>
+          <input class="vui-input" type="text" placeholder="Enter your name" aria-required="true" required  />
+      </label>        
+    </div>
   </div>
 
 .. admonition::  Accessibility
@@ -278,7 +280,7 @@ Less:
 
 .. code-block:: css
     
-  @import 'node_modules/vui-field/label';
+  @import '<npm module path>/vui-field/label';
 
   .required {
     #vui.Label.required();
@@ -299,8 +301,6 @@ HTML:
 Styling with CSS 
 ==================
 To visually flag a field as required with CSS, apply the ``.vui-required`` class to the element containing the label text.
-
-HTML:
 
 .. code-block:: html
 
@@ -329,21 +329,23 @@ When you have more than one related form element, group them together using the 
 
 .. raw:: html
 
-  <fieldset class="vui-field-row">
-    <legend class="vui-label">Condiments</legend>
-    <label>
-      <input type="checkbox" />
-      Ketchup
-    </label>
-    <label>
-      <input type="checkbox" />
-      Mustard
-    </label>
-    <label>
-      <input type="checkbox" />
-      Relish
-    </label>
-  </fieldset>
+  <div class="vuiexamplebox">
+    <fieldset class="vui-field-row">
+      <legend class="vui-label">Condiments</legend>
+      <label>
+        <input type="checkbox" />
+        Ketchup
+      </label>
+      <label>
+        <input type="checkbox" />
+        Mustard
+      </label>
+      <label>
+        <input type="checkbox" />
+        Relish
+      </label>
+    </fieldset>
+  </div>
 
 Styling with Less 
 ==================
@@ -353,8 +355,8 @@ Less:
 
 .. code-block:: css
 
-  @import 'node_modules/vui-field/field';
-  @import 'node_modules/vui-field/label';
+  @import '<npm module path>/vui-field/field';
+  @import '<npm module path>/vui-field/label';
 
   .myFieldRow, fieldset {
     #vui.FieldRow();
@@ -386,8 +388,6 @@ HTML:
 Styling with CSS 
 ==================
 Apply the ``.vui-field-row`` class to the ``<fieldset>`` element and apply the ``.vui-label`` class to the ``<legend>`` element.
-
-HTML:
 
 .. code-block:: html
 

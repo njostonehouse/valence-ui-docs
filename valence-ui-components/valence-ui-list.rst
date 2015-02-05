@@ -10,22 +10,26 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
 
 .. raw:: html
   
-  <p><strong>Default list with separator and padding</strong></p>
-  <div class="vui-docs-example">
-    <ul class="vui-list">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
+  <p><strong>Default list with separators and padding</strong></p>
+  <div class="vuiexamplebox">
+    <div class="vui-docs-example">
+      <ul class="vui-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
   </div>
 
-  <p><strong>Compact list with no separator</strong></p>
-  <div class="vui-docs-example">
-    <ul class="vui-list vui-compact vui-no-separator">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
+  <p><strong>Compact list with no separators</strong></p>
+  <div class="vuiexamplebox">
+    <div class="vui-docs-example">
+      <ul class="vui-list vui-compact vui-no-separator">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
   </div>
 
 *********************
@@ -35,7 +39,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, you can style lists with 
 
 .. code-block:: console
   
-  @import 'node_modules/vui-list/list';
+  @import '<npm module path>/vui-list/list';
 
 
 To apply list styling, call the ``#vui.List()`` mixin within your list's CSS selector:
@@ -81,18 +85,21 @@ To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.
 
 .. raw:: html
 
-  <div class="vui-docs-example2">
-    <ul id="liststates" class="vui-compact vui-no-separator">
-      <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>
-      <li class="vradio"><label><input name="list_group_1" type="radio" /> item 2</label></li>
-      <li class="vradio"><label><input name="list_group_1" type="radio" /> item 3</label></li>
-    </ul>
+  <div class="vuiexamplebox">
+    <div class="vui-docs-example2">
+      <ul id="liststates" class="vui-compact vui-no-separator">
+        <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>
+        <li class="vradio"><label><input name="list_group_1" type="radio" /> item 2</label></li>
+        <li class="vradio"><label><input name="list_group_1" type="radio" /> item 3</label></li>
+      </ul>
+    </div>
   </div>
+  <br>
 
 
 .. code-block:: css
   
-  @import 'node_modules/vui-list/list-item';
+  @import '<npm module path>/vui-list/list-item';
 
   li:hover, li:focus {
     #vui.ListItem.active();

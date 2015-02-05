@@ -10,10 +10,12 @@ The `vui-icons <https://www.npmjs.com/browse/keyword/vui>`_ library provides Les
 
 .. raw:: html
     
-  <div class="vui-field-row">
-    <span class="vui-icon-file-pdf"></span>
-    <span class="vui-icon-file-pdf-large"></span>
-    <span class="vui-icon-file-pdf-xlarge">
+  <div class="vuiexamplebox">
+    <div>
+      <span class="vui-icon-file-pdf"></span>
+      <span class="vui-icon-file-pdf-large"></span>
+      <span class="vui-icon-file-pdf-xlarge">
+    </div>
   </div>
 
 *******************
@@ -23,7 +25,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, add icons to your app wit
 
 .. code-block:: console
 
-  @import 'node_modules/vui-icons/icons';
+  @import '<npm module path>/vui-icons/icons';
 
 To apply the general styling for icons, call the ``#vui.Icon()`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui.Icon.filePdf()`` mixin.  
     
@@ -60,8 +62,6 @@ HTML:
 Styling with CSS 
 *******************
 If you’d prefer to use plain CSS instead of Less, bundle the **icons.css** file with your application’s CSS. Then apply the specified CSS class name on a ``<span>`` element. 
-
-HTML:
 
 .. code-block:: html
   
