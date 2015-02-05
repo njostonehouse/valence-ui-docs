@@ -459,7 +459,7 @@ p.admonition-title {
 }
 
 
-/* -- barb adjustments for vui docs ---------- */
+/* -- START OF CUSTOMIZED STYLES FOR VUI DOCS ------------------------- */
 
 h3.docs {
     font-size: 1.1em;
@@ -533,8 +533,10 @@ div.content .vui-docs-example > ul > li {
     width: 50%;
 }
 
-/*THIS IS COPIED STYLES from list.css (VUI) */
-/*Had to be copied because of painful CSS overrides */
+
+/* ---- Styles used in vui-list documentation  --- */
+/* -----THIS IS COPIED STYLES from list.css (VUI) ---- */
+/* ----Had to be copied because of painful CSS overrides ---- */
 
 div.content .vui-list {
   padding: 0;
@@ -571,8 +573,32 @@ div.content .vui-list > .vui-active.vui-selected {
   background-color: #d3e7fa;
 }
 
-/* -- remove background color from pygments highlight ---------------- */
+/* ---- Styles used in vui-list sample --- */
+
+#liststates > li{
+    background: none;
+    margin-bottom: 0;
+}
+
+#liststates > li:hover,
+#liststates > li:focus {
+  background: none;
+  background-color: #e7e7e7;
+}
+
+#liststates >li.selected {
+  background-color: #e8f2fc;
+  border-bottom-color: #f5f5f5;
+}
+#liststates >li.selected:hover,
+#liststates >li.selected:focus {
+  background-color: #d3e7fa;
+}
+
+/* -- Remove background color from pygments highlight -- */
 div.highlight { background: #ffffff; }
+
+/* -- END OF CUSTOMIZED STYLES FOR VUI DOCS ------------------------- */
 
 /* -- general body styles --------------------------------------------------- */
 

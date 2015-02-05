@@ -9,7 +9,8 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
 :example:`Examples`
 
 .. raw:: html
-
+  
+  <p><strong>Default list with separator and padding</strong></p>
   <div class="vui-docs-example">
     <ul class="vui-list">
       <li>Item 1</li>
@@ -18,6 +19,7 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
     </ul>
   </div>
 
+  <p><strong>Compact list with no separator</strong></p>
   <div class="vui-docs-example">
     <ul class="vui-list vui-compact vui-no-separator">
       <li>Item 1</li>
@@ -73,10 +75,23 @@ and we expose different mixins for each state:
 
 To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.ListItem.active()`` sub-mixins. For items that are both selected and active, call ``#vui.ListItem.selected.active()``.
 
-Here's a sample where we applied the *active* state to any list items that receive focus or hover.  Also, we created a new selector to apply the selected state.
+  .. role:: example
+  
+:example:`Example`
+
+.. raw:: html
+
+  <div class="vui-docs-example2">
+    <ul id="liststates" class="vui-compact vui-no-separator">
+      <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>
+      <li class="vradio"><label><input name="list_group_1" type="radio" /> item 2</label></li>
+      <li class="vradio"><label><input name="list_group_1" type="radio" /> item 3</label></li>
+    </ul>
+  </div>
+
 
 .. code-block:: css
-	
+  
   @import 'node_modules/vui-list/list-item';
 
   li:hover, li:focus {
@@ -89,6 +104,8 @@ Here's a sample where we applied the *active* state to any list items that recei
       #vui.ListItem.selected.active();
     }
   }
+
+In this example, we applied the *active* state to any list items that receive focus or hover.  Also, we created a new selector to apply the *selected* state.  Some JavaScript is used to toggle the ``selected`` class when the radio button is checked.
 
 *********************
 Styling with CSS

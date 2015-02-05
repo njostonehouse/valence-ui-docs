@@ -116,7 +116,7 @@ More than one panel can be expanded at a time by setting ``data-display-mode="st
     <div class="vui-accordion" data-display-mode="stacked">
       <div class="vui-accordion-header" data-content-labelledby="candy1950s">
         <div class="vui-accordion-header-content">
-          <h3 class="docs" id="candy1950s"><a href="http://www.d2l.com">1950s Candy</a></h3>
+          <h3 class="docs" id="candy1950s">1950s Candy</h3>
         </div>
       </div>
       <div class="vui-accordion-content">

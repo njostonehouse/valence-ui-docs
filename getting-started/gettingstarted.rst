@@ -1,16 +1,18 @@
 .. title:: Getting Started with VUI
 
-We've built the Valence UI libraries on `Less <http://lesscss.org/>`_, which is a CSS pre-processor that allows you to extend the CSS. We provide both the compiled CSS and Less mixins for each component in an `npm module <https://www.npmjs.org/browse/keyword/vui>`_.
+We've built the Valence UI libraries on `Less <http://lesscss.org/>`_, which is a CSS pre-processor that allows you to extend the CSS. For most components, we provide both the compiled CSS and Less mixins that you can use to style and customize your app.
+
+All components are available as `npm modules <https://www.npmjs.org/browse/keyword/vui>`_.
 
 ************************
 Comfortable with CSS?
 ************************
-You can style VUI components by just using plain CSS. Each component includes CSS files that you can bundle with your application.
+You can style VUI components by just using plain CSS. For components that include CSS files, just bundle those files with your application.
 
 ************************
 Comfortable with Less?
 ************************
-If you'd rather use `Less <http://lesscss.org/>`_ to style and customize your app, each VUI component includes Less mixins that you can import into your Less files.
+If you'd rather use `Less <http://lesscss.org/>`_ to style and customize your app, most VUI components include Less mixins that you can import into your Less files.
 
 ****************************
 Installing the components 
@@ -96,7 +98,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
         #vui.changed();
       }
 
-3.  We'll create a simple HTML file to display page and its details.  Notice that because we are using :doc:`change tracking <../valence-ui-components/valence-ui-jquery-change-tracking>`, which is a jQuery-based widget, we need to include `jQuery <http://jqueryui.com/>`_.
+3.  We'll create a simple HTML file to display page and its details.  Notice that because we are using :doc:`change tracking <../valence-ui-components/valence-ui-jquery-change-tracking>`, which is a jQuery-based widget, we need to include `jQuery <http://jquery.com/>`_ and `jQuery UI <http://jqueryui.com/>`_.
 
     .. code-block:: html
 

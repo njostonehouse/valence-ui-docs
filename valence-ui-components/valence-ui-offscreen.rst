@@ -4,7 +4,7 @@ Off-screen
 
 The `vui-offscreen <https://www.npmjs.com/browse/keyword/vui>`_ library provides a Less mixin and CSS for positioning elements off the screen. 
 
-Off-screen elements are valuable from an accessibility perspective when you want to have elements that are hidden to sighted users while being recognizable for screen reader users. For more information, read `WebAIM's article on Invisible Content <http://webaim.org/techniques/css/invisiblecontent/>`_.
+Off-screen elements are valuable from an accessibility perspective when you want to have elements that are hidden to sighted users while being recognizable for screen reader users. However, you should make sure to apply off-screen to the correct elements. If you hide elements that receive focus, this might confuse sighted users because they will not be able to see which element has focus. For more information, read `WebAIM's article on Invisible Content <http://webaim.org/techniques/css/invisiblecontent/>`_.
 
 *********************
 Styling with Less 

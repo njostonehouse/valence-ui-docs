@@ -260,13 +260,13 @@ The `vui-field <https://www.npmjs.com/browse/keyword/vui>`_ library contain Less
   <div class="vui-field-row">
     <label class="vui-label">
       <span class="vui-required">Name</span>
-      <input class="vui-input" type="text" placeholder="Enter your name" />
+        <input class="vui-input" type="text" placeholder="Enter your name" aria-required="true" required  />
     </label>        
   </div>
 
 .. admonition::  Accessibility
 
-  It's important to note that a required field is indicated with `just a visual flag`. To ensure you meet accessibility requirements, mark up the corresponding input with the `HTML5 "required" attribute <http://www.w3.org/html/wg/drafts/html/master/forms.html#the-required-attribute>`_ and/or the `"aria-required" attribute <http://www.w3.org/TR/wai-aria/states_and_properties#aria-required>`_. For more information, see 
+  It's important to note that a required field is indicated with `just a visual flag`. To ensure you meet accessibility requirements, mark up the corresponding input with the `HTML5 "required" attribute <http://www.w3.org/html/wg/drafts/html/master/forms.html#the-required-attribute>`_ and the `"aria-required" attribute <http://www.w3.org/TR/wai-aria/states_and_properties#aria-required>`_. For more information, see 
   `MDN: Using the aria-required attribute <https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_attribute>`_.
 
 
@@ -291,7 +291,7 @@ HTML:
   <div class="myFieldRow">
     <label>
       <span class="required">Last Name</span>
-      <input type="text" placeholder="Enter your name" required />
+      <input type="text" placeholder="Enter your name" aria-required="true" required />
     </label>
   </div>
 
@@ -307,7 +307,7 @@ HTML:
   <div class="vui-field-row">
     <label class="vui-label">
       <span class="vui-required">Name</span>
-      <input class="vui-input" type="text" placeholder="Enter your name" />
+      <input class="vui-input" type="text" placeholder="Enter your name" aria-required="true" required />
     </label>        
   </div>
 

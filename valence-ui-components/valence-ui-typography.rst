@@ -161,6 +161,13 @@ The "help" style can be applied to any text elements (for example, ``<p>`` and `
     </p>
   </div>
 
+.. admonition::  Accessibility
+
+  If the help information is included in a form, make sure it can be navigated to by a screen reader.  The help information can be associated to a form field by using the ``aria-describedby`` attribute. 
+
+  For more information, read `WebAIM's article on Advanced Form Labeling <http://webaim.org/techniques/forms/advanced#describedby>`_.
+
+
 Styling with Less 
 ==================
 To apply the help style with Less, call the ``#vui.Typography.help()`` mixin within the selector.
