@@ -13,7 +13,7 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 {% endblock %}
 {% set script_files = script_files %}
-{% set css_files = css_files + ['_static/grid.css'] + ['_static/vui-link/link.css'] + ['_static/vui-button/button.css'] + ['_static/vui-accordion-jquery/accordion.css'] + ['_static/vui-typography/typography.css'] + ['_static/vui-breadcrumbs/breadcrumbs.css'] + ['_static/vui-field/field.css'] + ['_static/vui-input/input.css'] + ['_static/vui-icons/icons.css'] + ['_static/vui-offscreen/offscreen.css'] + ['_static/vui-list/list.css'] + ['_static/vui-change-tracking-jquery/changeTracking.css'] + ['_static/vui-collapsible-section-jquery/collapsibleSection.css'] %}
+{% set css_files = css_files + ['_static/grid.css'] + ['_static/vui-icons/icons.css'] + ['_static/vui-offscreen/offscreen.css'] + ['_static/vui-link/link.css'] + ['_static/vui-button/button.css'] + ['_static/vui-accordion-jquery/accordion.css'] + ['_static/vui-typography/typography.css'] + ['_static/vui-breadcrumbs/breadcrumbs.css'] + ['_static/vui-field/field.css'] + ['_static/vui-input/input.css'] + ['_static/vui-list/list.css'] + ['_static/vui-change-tracking-jquery/changeTracking.css'] + ['_static/vui-collapsible-section-jquery/collapsibleSection.css'] %}
 
 {# do not display relbars #}
 {% block relbar1 %}{% endblock %}
@@ -49,6 +49,7 @@
     {%- endif %}
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_static/vui-list-states-example.js"></script>
     <script type="text/javascript" src="../_static/vui-accordion-jquery/accordion.js"></script>
     <script type="text/javascript" src="../_static/vui-change-tracking-jquery/changeTracking.js"></script>
     <script type="text/javascript" src="../_static/vui-change-tracking-jquery/changeTracker.js"></script>
