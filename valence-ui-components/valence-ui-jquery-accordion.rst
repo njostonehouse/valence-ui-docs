@@ -10,13 +10,13 @@ The `vui-accordion-jquery <https://www.npmjs.com/browse/keyword/vui>`_ library p
     <div class="vui-typography">
       <div class="vui-accordion" >
         <div class="vui-accordion-header" data-content-labelledby="panel1">
-            <h3 class="docs" id="panel1">Accordion 1</h3>
+            <h3 class="vui-heading-3 docs" id="panel1">Accordion 1</h3>
         </div>
         <div class="vui-accordion-content">
           <p>Accordion 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="vui-accordion-header" data-content-labelledby="panel2">
-          <h3 class="docs" id="panel2">Accordion 2</h3>
+          <h3 class="vui-heading-3 docs" id="panel2">Accordion 2</h3>
         </div>
         <div class="vui-accordion-content">
           <p>Accordion 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -48,7 +48,7 @@ To initialize the accordion, in your JavaScript call the ``vui_accordion()`` fun
     <div class="vui-typography">
       <div class="vui-accordion" >
         <div class="vui-accordion-header" data-content-labelledby="candy1930s">
-          <h3 class="docs" id="candy1930s">1930s Candy</h3>
+          <h3 class="vui-heading-3 docs" id="candy1930s">1930s Candy</h3>
         </div>
         <div class="vui-accordion-content">
           <ul>
@@ -57,7 +57,7 @@ To initialize the accordion, in your JavaScript call the ``vui_accordion()`` fun
           </ul>
         </div>
         <div class="vui-accordion-header" data-content-labelledby="candy1940s">
-          <h3 class="docs" id="candy1940s">1940s Candy</h3>
+          <h3 class="vui-heading-3 docs" id="candy1940s">1940s Candy</h3>
         </div>
         <div class="vui-accordion-content">
           <ul>
@@ -76,7 +76,7 @@ Here's the HTML:
 
   <div class="vui-accordion" >
     <div class="vui-accordion-header" data-content-labelledby="candy1930s">
-        <h3 class="docs" id="candy1930s">1930s Candy</h3>
+        <h3 class="vui-heading-3" id="candy1930s">1930s Candy</h3>
     </div>
     <div class="vui-accordion-content">
       <ul>
@@ -85,7 +85,7 @@ Here's the HTML:
       </ul>
     </div>
     <div class="vui-accordion-header" data-content-labelledby="candy1940s">
-      <h3 class="docs" id="candy1940s">1940s Candy</h3>
+      <h3 class="vui-heading-3" id="candy1940s">1940s Candy</h3>
     </div>
     <div class="vui-accordion-content">
       <ul>
@@ -123,7 +123,7 @@ More than one panel can be expanded at a time by setting ``data-display-mode="st
       <div class="vui-accordion" data-display-mode="stacked">
         <div class="vui-accordion-header" data-content-labelledby="candy1950s">
           <div class="vui-accordion-header-content">
-            <h3 class="docs" id="candy1950s">1950s Candy</h3>
+            <h3 class="vui-heading-3 docs" id="candy1950s">1950s Candy</h3>
           </div>
         </div>
         <div class="vui-accordion-content">
@@ -134,7 +134,7 @@ More than one panel can be expanded at a time by setting ``data-display-mode="st
           </ul>
         </div>
         <div class="vui-accordion-header" data-content-labelledby="candy1960s">
-          <h3 class="docs" id="candy1960s">1960s Candy</h3>
+          <h3 class="vui-heading-3 docs" id="candy1960s">1960s Candy</h3>
         </div>
         <div class="vui-accordion-content">
           <ul>
@@ -144,7 +144,7 @@ More than one panel can be expanded at a time by setting ``data-display-mode="st
           </ul>
         </div>
         <div class="vui-accordion-header" data-content-labelledby="candy1970s">
-          <h3 class="docs" id="candy1970s">1970s Candy</h3>
+          <h3 class="vui-heading-3 docs" id="candy1970s">1970s Candy</h3>
         </div>
         <div class="vui-accordion-content">
           <ul>
@@ -164,7 +164,7 @@ Here's the HTML:
 
   <div class="vui-accordion" data-display-mode="stacked">
     <div class="vui-accordion-header" data-content-labelledby="candy1950s">
-      <h3 class="docs" id="candy1950s">1950s Candy</h3>
+      <h3 class="vui-heading-3" id="candy1950s">1950s Candy</h3>
     </div>
     <div class="vui-accordion-content">
       <ul>
@@ -174,7 +174,7 @@ Here's the HTML:
       </ul>
     </div>
     <div class="vui-accordion-header" data-content-labelledby="candy1960s">
-      <h3 class="docs" id="candy1960s">1960s Candy</h3>
+      <h3 class="vui-heading-3" id="candy1960s">1960s Candy</h3>
     </div>
     <div class="vui-accordion-content">
       <ul>
@@ -184,7 +184,7 @@ Here's the HTML:
       </ul>
     </div>
     <div class="vui-accordion-header" data-content-labelledby="candy1970s">
-      <h3 class="docs" id="candy1970s">1970s Candy</h3>
+      <h3 class="vui-heading-3" id="candy1970s">1970s Candy</h3>
     </div>
     <div class="vui-accordion-content">
       <ul>

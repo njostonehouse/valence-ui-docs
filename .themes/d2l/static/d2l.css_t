@@ -464,7 +464,6 @@ p.admonition-title {
 h3.docs {
     font-size: 1.1em;
     font-weight: normal;
-    color: {{ theme_headingcolor }};
     margin: 0px;
 }
 

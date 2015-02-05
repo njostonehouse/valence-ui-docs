@@ -10,14 +10,14 @@ The `vui-collapsible-section-jquery <https://www.npmjs.com/browse/keyword/vui>`_
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
-    <h4 class="docs vui-heading-collapsible" data-target="collapse01">
+  <div class="vuiexamplebox vui-typography">
+    <h4 class="vui-heading-4 docs vui-heading-collapsible" data-target="collapse01">
       Collapsible section: Expanded by default
     </h4>
     <div id="collapse01">
       This section is expanded and so you can read all the details that pertain to this section.
     </div>
-    <h4 class="docs vui-heading-collapsible" data-target="collapse02">
+    <h4 class="vui-heading-4 docs vui-heading-collapsible" data-target="collapse02">
       Collapsible section: Collapsed by default
     </h4>
     <div id="collapse02" style="display:none;">
@@ -29,13 +29,13 @@ Here's the HTML:
 
 .. code-block:: html
 
-  <h4 class="vui-heading-collapsible" data-target="collapse01">
+  <h4 class="vui-heading-4 vui-heading-collapsible" data-target="collapse01">
     Collapsible section: Expanded by default
   </h4>
   <div id="collapse01">
     This section is expanded and so you can read all the details that pertain to this section.
   </div>
-  <h4 class="vui-heading-collapsible" data-target="collapse02">
+  <h4 class="vui-heading-4 vui-heading-collapsible" data-target="collapse02">
     Collapsible section: Collapsed by default
   </h4>
   <div id="collapse02" style="display:none;">
