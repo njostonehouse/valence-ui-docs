@@ -24,3 +24,4 @@ For any docs updates, please perform the following:
 
 
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-docs
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-docs.svg?branch=master
