@@ -10,7 +10,7 @@ The `vui-button <https://www.npmjs.com/browse/keyword/vui>`_ library contains Le
 
 .. raw:: html
   
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <button class="vui-button vui-primary">Button 1</button>
     <button class="vui-button">Button 2</button>
     <input class="vui-button" type="button" value="Button 3" />
@@ -73,7 +73,7 @@ To include an icon inside a button, add a ``<span>`` element inside the button a
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-field-row">
       <button class="vui-button">
         <span class="vui-icon-bookmark"></span> Bookmark

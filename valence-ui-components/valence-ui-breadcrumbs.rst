@@ -10,7 +10,7 @@ The `vui-breadcrumbs <https://www.npmjs.com/browse/keyword/vui>`_ library contai
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <ol class="vui-breadcrumbs">
       <li><a>Crumb 1</a></li>
       <li><a>Crumb 2</a></li>

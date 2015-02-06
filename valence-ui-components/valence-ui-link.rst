@@ -10,7 +10,7 @@ The `vui-link <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <a class="vui-link" href="#">Plain Link</a><br>
     <a class="vui-link vui-link-main" href="#">Main Link</a><br>
   </div>

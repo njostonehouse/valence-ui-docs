@@ -17,7 +17,7 @@ The `vui-input <https://www.npmjs.com/browse/keyword/vui>`_ library contains Les
 
 .. raw:: html
     
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
   <div class="vui-field-row">
     <input style="width:200px;" class="vui-input" type="text" value="Some text" />
     <input style="width:200px;"class="vui-input" type="password" value="my password" />
@@ -162,7 +162,7 @@ The `vui-field <https://www.npmjs.com/browse/keyword/vui>`_ library contain a se
 
 .. raw:: html
     
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-field-row">
       <label class="vui-label">
         Name
@@ -257,7 +257,7 @@ The `vui-field <https://www.npmjs.com/browse/keyword/vui>`_ library contain Less
 
 .. raw:: html
     
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-field-row">
       <label class="vui-label">
         <span class="vui-required">Name</span>
@@ -329,7 +329,7 @@ When you have more than one related form element, group them together using the 
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <fieldset class="vui-field-row">
       <legend class="vui-label">Condiments</legend>
       <label>

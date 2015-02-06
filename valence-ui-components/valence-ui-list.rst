@@ -11,7 +11,7 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
 .. raw:: html
   
   <p><strong>Default list with separators and padding</strong></p>
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example">
       <ul class="vui-list">
         <li>Item 1</li>
@@ -22,7 +22,7 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
   </div>
 
   <p><strong>Compact list with no separators</strong></p>
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example">
       <ul class="vui-list vui-compact vui-no-separator">
         <li>Item 1</li>
@@ -85,7 +85,7 @@ To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example2">
       <ul id="liststates" class="vui-compact vui-no-separator">
         <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>

@@ -10,7 +10,7 @@ The `vui-change-tracking-jquery <https://www.npmjs.com/browse/keyword/vui>`_ lib
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <form data-track-changes="true">
       <div class="tracker vui-field-row">
         <label class="vui-label">
@@ -116,7 +116,7 @@ The change-tracking state can be reset for one or more elements by triggering th
 
 .. raw:: html
 
-  <div class="vuiexamplebox">
+  <div class="vuiexamplebox vui-typography">
     <div id="tracking_container" data-track-changes="true">
       <div class="tracker vui-field-row">
         <label class="vui-label">
