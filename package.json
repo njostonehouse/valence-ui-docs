@@ -1,24 +1,11 @@
 {
-  "name": "DocsTestSphinx",
+  "name": "Valence-UI-Docs",
+  "description": "Docs for VUI components.",
   "version": "0.0.1",
-  "description": "Docs demo.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
-  },
+  "author": "D2l Corporation",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpaduch/DocsTestSphinx.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bpaduch/DocsTestSphinx/issues"
-  },
-  "homepage": "https://github.com/bpaduch/DocsTestSphinx",
-  "private": true,
-  "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-sftp": "^0.1.3"
+    "url": "https://github.com/Brightspace/valence-ui-docs.git"
   }
 }
