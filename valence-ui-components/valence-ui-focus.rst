@@ -22,30 +22,7 @@ Call the ``#vui.focusOutline()`` mixin from your CSS selector, usually with the 
   a:focus {
     #vui.focusOutline();
   }
-
-The outline width, color, style, and offset values can also be overridden when calling the ``#vui.focusOutline()`` mixin:
-
-.. code-block:: css
-
-  a:focus {
-    #vui.focusOutline(
-      @width: 2px,
-      @color: #00FF00,
-      @style: solid,
-      @offset: 2px
-    );
-  }
-
-To customize the focus mixin, the following global variables are exposed:
-
-.. code-block:: css
-
-  @vui-focus-outlineWidth;
-  @vui-focus-outlineStyle;
-  @vui-focus-outlineColor;
-  @vui-focus-outlineOffset;
   
-
 *******************
 Styling with CSS 
 *******************
