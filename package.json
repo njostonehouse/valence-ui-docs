@@ -24,6 +24,7 @@
   "private": true,
   "devDependencies": {
     "concat-bin": "^1.0.1",
+    "rimraf": "^2.2.8",
     "vui-accordion-jquery": "^0.1.2",
     "vui-breadcrumbs": "^0.3.1",
     "vui-button": "^0.5.1",
