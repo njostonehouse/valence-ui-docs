@@ -3,7 +3,9 @@ python:
 - '2.7'
 before_install:
 - export COMMIT_SHA=`git log -1 --pretty=format:%H`
-install: pip install -q -r requirements.txt
+install:
+- pip install -q -r requirements.txt
+- npm install
 script: npm run build
 deploy:
 - provider: s3
