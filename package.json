@@ -18,8 +18,6 @@
   "homepage": "https://github.com/Brightspace/valence-ui-docs",
   "private": true,
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-sftp": "^0.1.3"
   },
   "keywords": [
     "d2l",
