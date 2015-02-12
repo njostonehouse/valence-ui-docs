@@ -4,8 +4,6 @@ python:
 before_install:
 - export COMMIT_SHA=`git log -1 --pretty=format:%H`
 install: pip install -q -r requirements.txt
-script:
-- sphinx-build -b html -d _build/doctrees . _build/html
 deploy:
 - provider: s3
   access_key_id: $aws_key_prod

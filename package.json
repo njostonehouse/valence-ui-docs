@@ -4,7 +4,14 @@
   "description": "Documentation for the Valence User Interface (VUI) collection of components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "prebuild": "rimraf dist && mkdir dist",
+    "build:vui": "npm run build:vui:css & npm run build:vui:js",
+    "build:vui:css": "concat ./node_modules/vui-accordion-jquery/accordion.css ./node_modules/vui-breadcrumbs/breadcrumbs.css ./node_modules/vui-button/button.css ./node_modules/vui-change-tracking-jquery/changeTracking.css ./node_modules/vui-collapsible-section-jquery/collapsibleSection.css ./node_modules/vui-field/field.css ./node_modules/vui-focus/focus.css ./node_modules/vui-icons/icons.css ./node_modules/vui-input/input.css ./node_modules/vui-link/link.css ./node_modules/vui-list/list.css ./node_modules/vui-offscreen/offscreen.css ./node_modules/vui-typography/typography.css -o ./dist/valenceui.css",
+    "build:vui:js": "concat ./node_modules/vui-accordion-jquery/accordion.js ./node_modules/vui-change-tracking-jquery/changeTracking.js ./node_modules/vui-change-tracking-jquery/changeTracker.js ./node_modules/vui-collapsible-section-jquery/collapsibleSection.js -o ./dist/valenceui.js",
+    "build:sphinx": "sphinx-build -b html -d _build/doctrees . _build/html",
+    "build": "npm run build:vui && npm run build:sphinx",
+    "pretest": "npm run build",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -18,6 +25,20 @@
   "homepage": "https://github.com/Brightspace/valence-ui-docs",
   "private": true,
   "devDependencies": {
+    "concat-bin": "^1.0.1",
+    "vui-accordion-jquery": "^0.1.2",
+    "vui-breadcrumbs": "^0.3.1",
+    "vui-button": "^0.5.1",
+    "vui-change-tracking-jquery": "^0.1.0",
+    "vui-collapsible-section-jquery": "^0.2.2",
+    "vui-field": "^0.4.1",
+    "vui-focus": "^0.5.0",
+    "vui-icons": "^0.3.3",
+    "vui-input": "^0.4.1",
+    "vui-link": "^0.4.0",
+    "vui-list": "^0.2.0",
+    "vui-offscreen": "0.0.2",
+    "vui-typography": "^0.3.0"
   },
   "keywords": [
     "d2l",
