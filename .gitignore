@@ -2,3 +2,5 @@
 _build
 vuidev.pem
 vui-modules/
+dist
+node_modules
