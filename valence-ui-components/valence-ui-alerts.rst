@@ -2,7 +2,7 @@
 Alerts
 ##################
 
-The `vui-alerts <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less mixins and CSS that can be used to apply alert styles to a containing element. In most cases you'll want to apply this alert style to a simple container for a message; however, the contents of the container doesn't have to be limited to just text (for example, the container can include images, buttons, other HTML, and so on).
+The `vui-alerts <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less mixins and CSS that can be used to apply alert styles to a containing element. In most cases you'll want to apply this alert style to a simple container for a message; however, you don’t have to limit the container’s contents to just text (for example, the container can include images, buttons, other HTML, and so on).
 
 .. role:: example
   
@@ -19,19 +19,19 @@ If you're familiar with `Less <http://lesscss.org/>`_, use our Less mixins to ap
 
 .. code-block:: console
 
-  @import 'node_modules/vui-alerts/alerts';
+  @import '<npm module path>/vui-alerts/alerts';
 
 To apply the **error** alerts style, import the following library:
 
 .. code-block:: console
 
-  @import 'node_modules/vui-alerts/error';
+  @import '<npm module path>/vui-alerts/error';
 
 Then call the ``#vui.Alerts.error();`` mixin from within your CSS selector:
 
 .. code-block:: css
 
-  .vui-error {
+  .my-error-alert {
     #vui.Alerts.error();
   }
   
