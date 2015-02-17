@@ -5,6 +5,7 @@
 
    valence-ui-components/index
    valence-ui-components/valence-ui-jquery-accordion
+   valence-ui-components/valence-ui-alerts
    valence-ui-components/valence-ui-breadcrumbs
    valence-ui-components/valence-ui-button
    valence-ui-components/valence-ui-jquery-change-tracking

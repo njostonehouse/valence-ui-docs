@@ -7,6 +7,8 @@ Here are the available Valence UI components:
 
     * - :doc:`Accordion <valence-ui-jquery-accordion>`
       - A jQuery-based widget for displaying a vertical panel that expands and collapses when clicked.
+    * - :doc:`Alerts <valence-ui-alerts>`
+      - Styles for alert messages.
     * - :doc:`Breadcrumbs <valence-ui-breadcrumbs>`
       - Styles for creating breadcrumb links.
     * - :doc:`Buttons <valence-ui-button>`

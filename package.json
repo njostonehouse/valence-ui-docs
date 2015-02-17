@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "rimraf dist && rimraf _build && mkdir dist && mkdir _build",
     "build:vui": "npm run build:vui:css & npm run build:vui:js",
-    "build:vui:css": "concat ./node_modules/vui-accordion-jquery/accordion.css ./node_modules/vui-breadcrumbs/breadcrumbs.css ./node_modules/vui-button/button.css ./node_modules/vui-change-tracking-jquery/changeTracking.css ./node_modules/vui-collapsible-section-jquery/collapsibleSection.css ./node_modules/vui-field/field.css ./node_modules/vui-focus/focus.css ./node_modules/vui-icons/icons.css ./node_modules/vui-input/input.css ./node_modules/vui-link/link.css ./node_modules/vui-list/list.css ./node_modules/vui-offscreen/offscreen.css ./node_modules/vui-typography/typography.css -o ./dist/valenceui.css",
+    "build:vui:css": "concat ./node_modules/vui-accordion-jquery/accordion.css ./node_modules/vui-alerts/error.css ./node_modules/vui-breadcrumbs/breadcrumbs.css ./node_modules/vui-button/button.css ./node_modules/vui-change-tracking-jquery/changeTracking.css ./node_modules/vui-collapsible-section-jquery/collapsibleSection.css ./node_modules/vui-field/field.css ./node_modules/vui-focus/focus.css ./node_modules/vui-icons/icons.css ./node_modules/vui-input/input.css ./node_modules/vui-link/link.css ./node_modules/vui-list/list.css ./node_modules/vui-offscreen/offscreen.css ./node_modules/vui-typography/typography.css -o ./dist/valenceui.css",
     "build:vui:js": "concat ./node_modules/vui-accordion-jquery/accordion.js ./node_modules/vui-change-tracking-jquery/changeTracking.js ./node_modules/vui-change-tracking-jquery/changeTracker.js ./node_modules/vui-collapsible-section-jquery/collapsibleSection.js -o ./dist/valenceui.js",
     "build:sphinx": "sphinx-build -b html -d _build/doctrees . _build/html",
     "build": "npm run build:vui && npm run build:sphinx"
@@ -26,6 +26,7 @@
     "concat-bin": "^1.0.1",
     "rimraf": "^2.2.8",
     "vui-accordion-jquery": "^0.1.2",
+    "vui-alerts": "0.0.7",
     "vui-breadcrumbs": "^0.3.1",
     "vui-button": "^0.5.1",
     "vui-change-tracking-jquery": "^0.1.0",
