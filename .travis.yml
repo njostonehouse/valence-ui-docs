@@ -37,4 +37,4 @@ env:
 after_success:
 - echo $TRAVIS_TAG
 - if [[ $TRAVIS_TAG == '' ]]; then
-  python sendComment.py "Published to http://vui-docs-internal.s3-website-us-east-1.amazonaws.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}"
+  python sendComment.py "Published to http://vui-docs-internal.s3-website-us-east-1.amazonaws.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
