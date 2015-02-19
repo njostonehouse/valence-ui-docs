@@ -11,7 +11,7 @@ deploy:
 - provider: s3
   access_key_id: $aws_key_prod
   secret_access_key: $aws_secret_prod
-  bucket: vui-docs
+  bucket: ui.valence.desire2learn.com
   local-dir: _build/html
   skip_cleanup: true
   on:
@@ -20,7 +20,7 @@ deploy:
 - provider: s3
   access_key_id: $aws_key_internal
   secret_access_key: $aws_secret_internal
-  bucket: vui-docs-internal
+  bucket: ui.edev.desire2learn.com
   local-dir: _build/html
   upload-dir: ${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}
   skip_cleanup: true
