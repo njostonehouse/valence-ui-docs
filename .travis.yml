@@ -35,4 +35,4 @@ env:
   - secure: BERjsO7xiTaAUePUT7gimjhbdAYtzjYtYt5v0Xdd2WR8CLe7ilKcrEWo7hM+LP8eyxJzIBw5pxGLaX5/fKuxLd8ajOqH2QlyG5HcOs7PRNT2/ec2OiSzrhwyHSguLzdGMwmvlBXzxBK11WEiElGm49VxFSboypUX3FBaA9nwlLw=
   - secure: CNcUnekzWxw7ak+lBKVYQK9dgTjB+iTBAmLJ+j2W6s7lIA+/6U9NPn8YCkmib8Ma2+/JsZnNGlqgCRysuXKEI7//Dp3SNUqf7mIWfblcPyqIPKtUV9VpblRPL07Dl35dBlSDYZLjHdzc5YkJ/WRgaB1Y7WWKTqYouLoqVCFN074=
 after_success:
-- python sendComment.py "Published to http://vui-docs-internal.s3-website-us-east-1.amazonaws.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
+- python sendComment.py "Published to http://ui.edev.desire2learn.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
