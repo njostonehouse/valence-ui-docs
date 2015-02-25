@@ -205,7 +205,7 @@ Less:
   }
 
   input {
-    #vui.input();
+    #vui.Input();
   }
 
 HTML: 

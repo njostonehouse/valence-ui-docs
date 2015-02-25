@@ -28,14 +28,14 @@ If you're familiar with `Less <http://lesscss.org/>`_, style your breadcrumbs wi
   
   @import '<npm module path>/vui-breadcrumbs/breadcrumbs'
 
-You can apply breadcrumb styles by implementing the ``#vui.breadcrumbs()`` mixin on your breadcrumb container.
+You can apply breadcrumb styles by implementing the ``#vui.Breadcrumbs()`` mixin on your breadcrumb container.
 
 Less:
 
 .. code-block:: css
     
     ol.breadcrumbs {
-      #vui.breadcrumbs();
+      #vui.Breadcrumbs();
     }
 
 HTML:

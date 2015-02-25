@@ -26,17 +26,17 @@ If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with o
 	
 	@import '<npm module path>/vui-button/button'
 
-To apply button styling to an element, call the ``#vui.button()`` mixin from within your CSS selector. You can also make an element a primary button by calling the ``#vui.button.primary()`` mixin.
+To apply button styling to an element, call the ``#vui.Button()`` mixin from within your CSS selector. You can also make an element a primary button by calling the ``#vui.Button.primary()`` mixin.
 
 Less:
 
 .. code-block:: css
 
   button, input[type=button] {
-    #vui.button();
+    #vui.Button();
   }
   button.primary {
-    #vui.button.primary();
+    #vui.Button.primary();
   }
 
 HTML:
