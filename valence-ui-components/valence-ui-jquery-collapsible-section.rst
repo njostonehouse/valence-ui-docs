@@ -2,7 +2,7 @@
 Collapsible Section
 ####################
 
-The `vui-collapsible-section-jquery <https://www.npmjs.com/browse/keyword/vui>`_ library provides a jQuery-based widget representing a collapsible section of content.
+The `jquery-vui-collapsible-section <https://www.npmjs.com/browse/keyword/vui>`_ library provides a jQuery-based widget representing a collapsible section of content.
 
 .. role:: example
 
@@ -44,7 +44,7 @@ Here's the HTML:
 
   ...
 
-  <script src="<npm module path>/vui-collapsible-section-jquery/collapsibleSection.js"></script>
+  <script src="<npm module path>/jquery-vui-collapsible-section/collapsibleSection.js"></script>
   <script>
     $(function () {
       $( '.vui-heading-collapsible' ).vui_collapsibleSection();

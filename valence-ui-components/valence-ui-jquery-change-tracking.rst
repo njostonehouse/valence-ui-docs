@@ -2,7 +2,7 @@
 Change Tracking
 ##################
 
-The `vui-change-tracking-jquery <https://www.npmjs.com/browse/keyword/vui>`_ library provides jQuery-based widgets, events, Less mixins, and CSS that can be used to visually indicate unsaved changes to form inputs.  When a user changes the input value for a field, the field is highlighted with a background color.
+The `jquery-vui-change-tracking <https://www.npmjs.com/browse/keyword/vui>`_ library provides jQuery-based widgets, events, Less mixins, and CSS that can be used to visually indicate unsaved changes to form inputs.  When a user changes the input value for a field, the field is highlighted with a background color.
 
 .. role:: example
     
@@ -59,8 +59,8 @@ Here's the HTML:
     
   ...
     
-  <script src="<npm module path>/vui-change-tracking-jquery/changeTracking.js"></script>
-  <script src="<npm module path>/vui-change-tracking-jquery/changeTracker.js"></script>
+  <script src="<npm module path>/jquery-vui-change-tracking/changeTracking.js"></script>
+  <script src="<npm module path>/jquery-vui-change-tracking/changeTracker.js"></script>
   <script>
     $(function () {
       $( '.tracker' ).vui_changeTracker();
@@ -89,7 +89,7 @@ If you're familiar with `Less <http://lesscss.org/>`_, you can apply the change 
 
 .. code-block:: console
 
-  @import '<npm module path>/vui-change-tracking-jquery/changeTracking'; 
+  @import '<npm module path>/jquery-vui-change-tracking/changeTracking';
 
 Then call the ``#vui.changed()`` mixin within the ``.vui-changed`` class selector: 
 
