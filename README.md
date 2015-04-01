@@ -7,8 +7,7 @@ This repo contains the source files for generating the documentation set for the
 * Tested by rendering in [Sphinx](http://sphinx-doc.org/) on [Travis CI](https://travis-ci.org)
 
 ##Documentation for VUI
-You can find the completed documentation for Valence UI at ... *coming soon*
-
+You can find the completed documentation for Valence UI at [ui.valence.d2l.com](http://ui.valence.d2l.com/)
 
 ##Process for updating docs
 For any docs updates, please perform the following:
