@@ -34,9 +34,7 @@ Then include the ``vui-alerts-error`` mixin statment from within your CSS select
 *******************
 Styling with Less
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, use our Less mixins to apply the alert styles. First, you'll need to import the alerts library into your Less file:
-
-**Note:** Less mixins are still included for backwards compatibility, however these will likely be removed in a future version.
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling alerts, you'll need to import the alerts library into your Less file:
 
 .. code-block:: console
 
