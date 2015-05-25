@@ -113,6 +113,7 @@ Actions
       <li><div class="vui-icon-preview"></div>actionPreview</li>
       <li><div class="vui-icon-remove"></div>actionRemove</li>
       <li><div class="vui-icon-reorder"></div>actionReorder</li>
+      <li><div class="vui-icon-search"></div>actionSearch</li>
       <li><div class="vui-icon-share"></div>actionShare</li>
       <li><div class="vui-icon-subscribe"></div>actionSubscribe</li>
       <li><div class="vui-icon-tag"></div>actionTag</li>
