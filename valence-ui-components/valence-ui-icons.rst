@@ -2,14 +2,14 @@
 Icons
 ##################
 
-The `vui-icons <https://www.npmjs.com/browse/keyword/vui>`_ library provides Less mixins and CSS classes for adding icons to your app. All icons are available in the "small" size of 16x16. The file icons are available in three different sizes: 16x16 (small), 24x24 (large), and 50x50 (xlarge). 
+The `vui-icons <https://github.com/Brightspace/valence-ui-icons>`_ library provides Less mixins and CSS classes for adding icons to your app. All icons are available in the "small" size of 16x16. The file icons are available in three different sizes: 16x16 (small), 24x24 (large), and 50x50 (xlarge).
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
-    
+
   <div class="vuiexamplebox">
     <div>
       <span class="vui-icon-file-pdf"></span>
@@ -19,7 +19,7 @@ The `vui-icons <https://www.npmjs.com/browse/keyword/vui>`_ library provides Les
   </div>
 
 *******************
-Styling with Less 
+Styling with Less
 *******************
 If you're familiar with `Less <http://lesscss.org/>`_, add icons to your app with our Less mixins.  First, you'll need to import the following library into your Less file:
 
@@ -27,8 +27,8 @@ If you're familiar with `Less <http://lesscss.org/>`_, add icons to your app wit
 
   @import '<npm module path>/vui-icons/icons';
 
-To apply the general styling for icons, call the ``#vui.Icon()`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui.Icon.filePdf()`` mixin.  
-    
+To apply the general styling for icons, call the ``#vui.Icon()`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui.Icon.filePdf()`` mixin.
+
 Less:
 
 .. code-block:: css
@@ -36,7 +36,7 @@ Less:
   [class^=icon] {
     #vui.Icon();
   }
-  
+
   .icon-filePdf {
     #vui.Icon.filePdf();
   }
@@ -56,24 +56,24 @@ HTML:
   <span class="icon-filePdf"></span>
   <span class="icon-filePdfLarge"></span>
   <span class="icon-filePdfXLarge"></span>
-   
+
 
 *******************
-Styling with CSS 
+Styling with CSS
 *******************
-If you’d prefer to use plain CSS instead of Less, bundle the **icons.css** file with your application’s CSS. Then apply the specified CSS class name on a ``<span>`` element. 
+If you’d prefer to use plain CSS instead of Less, bundle the **icons.css** file with your application’s CSS. Then apply the specified CSS class name on a ``<span>`` element.
 
 .. code-block:: html
-  
+
   <span class="vui-icon-file-pdf"></span>
   <span class="vui-icon-file-pdf-large"></span>
   <span class="vui-icon-file-pdf-xlarge"></span>
-   
+
 
 *********************
 Available Icons
 *********************
-In the Less mixins, the icons are named with the following conventions: 
+In the Less mixins, the icons are named with the following conventions:
 
 .. raw:: html
 
@@ -83,7 +83,7 @@ In the Less mixins, the icons are named with the following conventions:
     <li>property<i>PropertyName</i> (examples: <tt>propertyDateRestricted</tt>, <tt>propertyLocked</tt>)</li>
   </ul>
 
-In the CSS, the icons are named with the following conventions: 
+In the CSS, the icons are named with the following conventions:
 
 .. raw:: html
 

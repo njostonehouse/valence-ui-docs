@@ -3,38 +3,38 @@
 .. contents::
    :depth: 1
 
-The `vui-typography <https://www.npmjs.com/browse/keyword/vui>`_ library contains `Less <http://lesscss.org/>`_ mixins and CSS that can be used to produce basic typography styles.
+The `vui-typography <https://github.com/Brightspace/valence-ui-typography>`_ library contains `Less <http://lesscss.org/>`_ mixins and CSS that can be used to produce basic typography styles.
 
 *********************
 Default text
 *********************
-You can apply default text styling to a block-level element (for example, ``<body>``, ``<p>``, ``<div>``, and so on) by using Less or plain CSS. 
+You can apply default text styling to a block-level element (for example, ``<body>``, ``<p>``, ``<div>``, and so on) by using Less or plain CSS.
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
 
-  <div class="vuiexamplebox">    
+  <div class="vuiexamplebox">
     <p class="vui-typography">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </div>
 
-Styling with Less 
+Styling with Less
 ==================
 To apply default text styling in Less, call the ``#vui.Typography()`` mixin from within your selector.
 
 .. code-block:: css
-	
+
   @import '<npm module path>/vui-typography/typography';
 
   body {
     #vui.Typography();
   }
 
-Styling with CSS 
+Styling with CSS
 ==================
 If you'd prefer to use CSS, bundle the **typography.css** file with your application's CSS. Then apply the ``.vui-typography`` class to the block-level element.
 
@@ -50,12 +50,12 @@ Headings
 Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element by adding the appropriate ``.vui-heading-*`` class or by calling the ``#vui.Heading*`` Less mixin.
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
 
-  <div class="vuiexamplebox">  
+  <div class="vuiexamplebox">
     <div class="vui-typography">
       <h1 style="border-bottom:none;" class="vui-heading-1">Heading Style 1</h1>
       <h2 style="border-bottom:none;" class="vui-heading-2">Heading Style 2</h2>
@@ -73,7 +73,7 @@ Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element 
 
   For additional information, see `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_.
 
-Styling with Less 
+Styling with Less
 ==================
 To apply heading styles with Less, call the ``#vui-Heading1()`` - ``#vui-Heading4()`` mixin within the heading selector.  The selector level does not have to match the mixin level (for example, you can apply the ``#vui.Heading3()`` mixin for an ``h6`` selector).
 
@@ -97,7 +97,7 @@ To apply heading styles with Less, call the ``#vui-Heading1()`` - ``#vui-Heading
     #vui.Heading4();
   }
 
-Styling with CSS 
+Styling with CSS
 ==================
 To apply heading styles with plain CSS, add the appropriate ``.vui-heading-*`` class to any heading element.  The CSS class does not need to match the element level (for example, the ``.vui-heading-3`` class can be applied to a ``<h6>`` element.)
 
@@ -116,7 +116,7 @@ Emphasis
 Emphasis can be added to any text elements (for example, ``<p>`` and ``<span>``).
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
@@ -128,7 +128,7 @@ Emphasis can be added to any text elements (for example, ``<p>`` and ``<span>``)
   </div>
   </div>
 
-Styling with Less 
+Styling with Less
 ==================
 To apply the emphasis style with Less, call the ``#vui.Typography.emphasis()`` mixin within the selector.
 
@@ -139,7 +139,7 @@ To apply the emphasis style with Less, call the ``#vui.Typography.emphasis()`` m
   }
 
 
-Styling with CSS 
+Styling with CSS
 ==================
 To apply the emphasis style with CSS, add the ``.vui-emphasis`` class to the text element.
 
@@ -155,7 +155,7 @@ Help
 The "help" style can be applied to any text elements (for example, ``<p>`` and ``<span>``).
 
 .. role:: example
-    
+
 :example:`Example`
 
 .. raw:: html
@@ -170,12 +170,12 @@ The "help" style can be applied to any text elements (for example, ``<p>`` and `
 
 .. admonition::  Accessibility
 
-  If the help information is included in a form, make sure it can be navigated to by a screen reader.  The help information can be associated to a form field by using the ``aria-describedby`` attribute. 
+  If the help information is included in a form, make sure it can be navigated to by a screen reader.  The help information can be associated to a form field by using the ``aria-describedby`` attribute.
 
   For more information, read `WebAIM's article on Advanced Form Labeling <http://webaim.org/techniques/forms/advanced#describedby>`_.
 
 
-Styling with Less 
+Styling with Less
 ==================
 To apply the help style with Less, call the ``#vui.Typography.help()`` mixin within the selector.
 
@@ -185,7 +185,7 @@ To apply the help style with Less, call the ``#vui.Typography.help()`` mixin wit
     #vui.Typography.help();
   }
 
-Styling with CSS 
+Styling with CSS
 ==================
 To apply the help style with CSS, add the ``.vui-help`` class to the text element.
 

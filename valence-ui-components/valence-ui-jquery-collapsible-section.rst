@@ -2,7 +2,7 @@
 Collapsible Section
 ####################
 
-The `jquery-vui-collapsible-section <https://www.npmjs.com/browse/keyword/vui>`_ library provides a jQuery-based widget representing a collapsible section of content.
+The `jquery-vui-collapsible-section <https://github.com/Brightspace/jquery-valence-ui-collapsible-section>`_ library provides a jQuery-based widget representing a collapsible section of content.
 
 .. role:: example
 

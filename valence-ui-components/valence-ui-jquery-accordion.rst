@@ -2,7 +2,7 @@
 Accordion
 ##################
 
-The `jquery-vui-accordion <https://www.npmjs.com/browse/keyword/vui>`_ library provides a jQuery-based widget that displays a panel that when clicked, expands or collapses the associated content.
+The `jquery-vui-accordion <https://github.com/Brightspace/jquery-valence-ui-accordion>`_ library provides a jQuery-based widget that displays a panel that when clicked, expands or collapses the associated content.
 
 .. raw:: html
 
