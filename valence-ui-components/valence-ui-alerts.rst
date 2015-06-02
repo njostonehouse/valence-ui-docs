@@ -2,7 +2,7 @@
 Alerts
 ##################
 
-The `vui-alerts <https://www.npmjs.com/browse/keyword/vui>`_ library contains mixins and CSS that can be used to apply alert styles to a containing element. In most cases you'll want to apply this alert style to a simple container for a message; however, you don’t have to limit the container’s contents to just text (for example, the container can include images, buttons, other HTML, and so on).
+The `vui-alerts <https://github.com/Brightspace/valence-ui-alerts>`_ library contains mixins and CSS that can be used to apply alert styles to a containing element. In most cases you'll want to apply this alert style to a simple container for a message; however, you don’t have to limit the container’s contents to just text (for example, the container can include images, buttons, other HTML, and so on).
 
 .. role:: example
 

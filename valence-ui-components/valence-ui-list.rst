@@ -2,14 +2,14 @@
 List
 ##################
 
-The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less mixins and CSS that you can use to style lists. 
+The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contains Less mixins and CSS that you can use to style lists.
 
 .. role:: example
-	
+
 :example:`Examples`
 
 .. raw:: html
-  
+
   <p><strong>Default list with separators and padding</strong></p>
   <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example">
@@ -33,19 +33,19 @@ The `vui-list <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
   </div>
 
 *********************
-Styling with Less 
+Styling with Less
 *********************
 If you're familiar with `Less <http://lesscss.org/>`_, you can style lists with our Less mixins.  First, you'll need to import the following library into your Less file:
 
 .. code-block:: console
-  
+
   @import '<npm module path>/vui-list/list';
 
 
 To apply list styling, call the ``#vui.List()`` mixin within your list's CSS selector:
 
 .. code-block:: css
-  
+
   ul {
     #vui.List();
   }
@@ -80,7 +80,7 @@ and we expose different mixins for each state:
 To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.ListItem.active()`` sub-mixins. For items that are both selected and active, call ``#vui.ListItem.selected.active()``.
 
   .. role:: example
-  
+
 :example:`Example`
 
 .. raw:: html
@@ -98,7 +98,7 @@ To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.
 
 
 .. code-block:: css
-  
+
   @import '<npm module path>/vui-list/list-item';
 
   li:hover, li:focus {
@@ -117,7 +117,7 @@ In this example, we applied the *active* state to any list items that receive fo
 *********************
 Styling with CSS
 *********************
-If you'd prefer to use CSS to style lists, bundle the provided **list.css** file with your application's CSS. 
+If you'd prefer to use CSS to style lists, bundle the provided **list.css** file with your application's CSS.
 
 
 Apply the ``.vui-list`` class to your list elements:
@@ -133,7 +133,7 @@ Similar to the Less mixin, you can disable the separators between list items
 by adding the ``.vui-no-separator`` class:
 
 .. code-block:: css
-	
+
   <ul class="vui-list vui-no-separator"></ul>
 
 To reduce padding inside the items, apply the ``.vui-compact`` class:

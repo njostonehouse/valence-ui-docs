@@ -2,28 +2,28 @@
 Button
 ##################
 
-The `vui-button <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less mixins and CSS that you can use to style buttons. 
+The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library contains Less mixins and CSS that you can use to style buttons.
 
 .. role:: example
-	
+
 :example:`Example`
 
 .. raw:: html
-  
+
   <div class="vuiexamplebox vui-typography">
     <button class="vui-button vui-primary">Button 1</button>
     <button class="vui-button">Button 2</button>
     <input class="vui-button" type="button" value="Button 3" />
-    <button class="vui-button" disabled="disabled">Button 4</button> 
+    <button class="vui-button" disabled="disabled">Button 4</button>
   </div>
 
 *******************
-Styling with Less 
+Styling with Less
 *******************
 If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with our Less mixins.  First, you'll need to import the button library into your Less file:
 
 .. code-block:: console
-	
+
 	@import '<npm module path>/vui-button/button'
 
 To apply button styling to an element, call the ``#vui.Button()`` mixin from within your CSS selector. You can also make an element a primary button by calling the ``#vui.Button.primary()`` mixin.
@@ -45,7 +45,7 @@ HTML:
 
 	<button class="primary">Button 1</button>
 	<button>Button 2</button>
-	<input type="button" value="Button 3" /> 
+	<input type="button" value="Button 3" />
 	<button disabled="disabled">Button 4</button>
 
 *******************
@@ -58,7 +58,7 @@ your application's CSS. Then apply the ``.vui-button`` and ``.vui-button-primary
 
   <button class="vui-button vui-primary">Button 1</button>
   <button class="vui-button">Button 2</button>
-  <input class="vui-button" type="button" value="Button 3" /> 
+  <input class="vui-button" type="button" value="Button 3" />
   <button class="vui-button" disabled="disabled">Button 4</button>
 
 
@@ -68,7 +68,7 @@ Buttons with Icons
 To include an icon inside a button, add a ``<span>`` element inside the button and apply the appropriate Less mixin or CSS class for the icon.  For more information, see :doc:`Icons <../valence-ui-components/valence-ui-icons>`.
 
 .. role:: example
-	
+
 :example:`Example`
 
 .. raw:: html
@@ -82,7 +82,7 @@ To include an icon inside a button, add a ``<span>`` element inside the button a
         <span class="vui-icon-edit"></span> Edit
       </button>
     </div>
-    <div>        
+    <div>
       <button class="vui-button">
         <span class="vui-icon-bookmark"></span>
         <span class="vui-offscreen">Bookmark</span>
@@ -107,13 +107,13 @@ Less:
   {
     #vui.Icon();
   }
-  
+
   .icon-bookmark {
-    #vui.Icon.actionBookmark();  
+    #vui.Icon.actionBookmark();
   }
 
   .icon-edit {
-    #vui.Icon.actionEdit();  
+    #vui.Icon.actionEdit();
   }
 
 

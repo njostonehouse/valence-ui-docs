@@ -2,7 +2,7 @@
 Link
 ####################
 
-The `vui-link <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less mixins and CSS that you can use to style links. 
+The `vui-link <https://github.com/Brightspace/valence-ui-link>`_ library contains Less mixins and CSS that you can use to style links.
 
 .. role:: example
 
@@ -16,7 +16,7 @@ The `vui-link <https://www.npmjs.com/browse/keyword/vui>`_ library contains Less
   </div>
 
 *******************
-Styling with Less 
+Styling with Less
 *******************
 If you're familiar with `Less <http://lesscss.org/>`_, style your links with our Less mixins. First, you'll need to import the link library into your Less file:
 
@@ -40,9 +40,9 @@ You can also override the link color and focus colors:
 
 .. code-block:: css
 
-  #vui.Link( 
-    @color: #ff0000, 
-    @color-focus: #0000ff 
+  #vui.Link(
+    @color: #ff0000,
+    @color-focus: #0000ff
   );
 
 These colors are also exposed as variables, which can be referenced in your Less:
