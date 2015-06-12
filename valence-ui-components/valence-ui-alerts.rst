@@ -15,17 +15,11 @@ The `vui-alerts <https://github.com/Brightspace/valence-ui-alerts>`_ library con
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, use our Sass mixins to apply the alert styles.
-
-To apply the **error** alerts style, import the following library:
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-alerts/error';
-
-Then include the ``vui-alerts-error`` mixin statment from within your CSS selector:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply the alert styles. Import and include the mixin in your CSS selector:
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-alerts/error';
 
   .my-error-alert {
     @include vui-alerts-error;
@@ -34,21 +28,11 @@ Then include the ``vui-alerts-error`` mixin statment from within your CSS select
 *******************
 Styling with Less
 *******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling alerts, you'll need to import the alerts library into your Less file:
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-alerts/alerts';
-
-To apply the **error** alerts style, import the following library:
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-alerts/error';
-
-Then call the ``#vui.Alerts.error();`` mixin from within your CSS selector:
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling alerts, import and include the ``#vui.Alerts.error`` mixin in your CSS selector:
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-alerts/error';
 
   .my-error-alert {
     #vui.Alerts.error();
