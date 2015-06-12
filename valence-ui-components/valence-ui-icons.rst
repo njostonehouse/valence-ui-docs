@@ -19,19 +19,55 @@ The `vui-icons <https://github.com/Brightspace/valence-ui-icons>`_ library provi
   </div>
 
 *******************
-Styling with Less
+Styling with Sass
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, add icons to your app with our Less mixins.  First, you'll need to import the following library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to include icons in your CSS.
 
-.. code-block:: console
+To apply the general styling for icons, call the ``vui-icon`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui-filePdf`` mixin.
+
+Scss:
+
+.. code-block:: css
 
   @import '<npm module path>/vui-icons/icons';
+
+  [class^=icon] {
+    @include vui-icon;
+  }
+
+  .icon-filePdf {
+    @include vui-filePdf;
+  }
+
+  .icon-filePdfLarge {
+    @include vui-filePdfLarge;
+  }
+
+  .icon-filePdfXLarge {
+    @include vui-filePdfXLarge;
+  }
+
+HTML:
+
+.. code-block:: html
+
+  <span class="icon-filePdf"></span>
+  <span class="icon-filePdfLarge"></span>
+  <span class="icon-filePdfXLarge"></span>
+
+
+*******************
+Styling with Less
+*******************
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to include icons in your CSS, import and include the mixins for the desired icons in your CSS selector.
 
 To apply the general styling for icons, call the ``#vui.Icon()`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui.Icon.filePdf()`` mixin.
 
 Less:
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-icons/icons';
 
   [class^=icon] {
     #vui.Icon();

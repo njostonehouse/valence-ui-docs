@@ -3,7 +3,7 @@
 .. contents::
    :depth: 1
 
-The `vui-typography <https://github.com/Brightspace/valence-ui-typography>`_ library contains `Less <http://lesscss.org/>`_ mixins and CSS that can be used to produce basic typography styles.
+The `vui-typography <https://github.com/Brightspace/valence-ui-typography>`_ library contains mixins and CSS that can be used to produce basic typography styles.
 
 *********************
 Default text
@@ -22,9 +22,21 @@ You can apply default text styling to a block-level element (for example, ``<bod
     </p>
   </div>
 
+Styling with Sass
+==================
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply typographic style. Import and include the ``vui-typography`` mixin in your CSS selector.
+
+.. code-block:: css
+
+  @import '<npm module path>/vui-typography/typography';
+
+  body {
+    @include vui-typography;
+  }
+
 Styling with Less
 ==================
-To apply default text styling in Less, call the ``#vui.Typography()`` mixin from within your selector.
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to apply typographic style, import and include the ``#vui.Typography`` mixin in your CSS selector.
 
 .. code-block:: css
 
@@ -72,6 +84,30 @@ Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element 
   Heading levels should increase with your page's semantic structure, never skipping a level.
 
   For additional information, see `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_.
+
+Styling with Sass
+==================
+To apply heading styles with Sass, call the ``vui-typography-heading1`` - ``vui-typography-heading4`` mixin within the heading selector.  The selector level does not have to match the mixin level (for example, you can apply the ``vui-typography-heading3`` mixin for an ``h6`` selector).
+
+.. code-block:: css
+
+  @import '<npm module path>/vui-typography/typography';
+
+  h1 {
+    @include vui-typography-heading1;
+  }
+
+  h2 {
+    @include vui-typography-heading2;
+  }
+
+  h3 {
+    @include vui-typography-heading3;
+  }
+
+  h4 {
+    @include vui-typography-heading4;
+  }
 
 Styling with Less
 ==================
@@ -128,6 +164,16 @@ Emphasis can be added to any text elements (for example, ``<p>`` and ``<span>``)
   </div>
   </div>
 
+Styling with Sass
+==================
+To apply the emphasis style with Sass, call the ``vui-typography-emphasis`` mixin within the selector.
+
+.. code-block:: css
+
+  .emphasis {
+    @include vui-typography-emphasis;
+  }
+
 Styling with Less
 ==================
 To apply the emphasis style with Less, call the ``#vui.Typography.emphasis()`` mixin within the selector.
@@ -174,6 +220,15 @@ The "help" style can be applied to any text elements (for example, ``<p>`` and `
 
   For more information, read `WebAIM's article on Advanced Form Labeling <http://webaim.org/techniques/forms/advanced#describedby>`_.
 
+Styling with Sass
+==================
+To apply the help style with Sass, call the ``vui-typography-help`` mixin within the selector.
+
+.. code-block:: css
+
+  .help {
+    @include vui-typography-help;
+  }
 
 Styling with Less
 ==================

@@ -15,7 +15,7 @@ The `vui-alerts <https://github.com/Brightspace/valence-ui-alerts>`_ library con
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply the alert styles. Import and include the mixin in your CSS selector:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply the alert styles. Import and include the ``vui-alerts-error`` mixin in your CSS selector:
 
 .. code-block:: css
 

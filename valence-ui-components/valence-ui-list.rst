@@ -33,18 +33,45 @@ The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contain
   </div>
 
 *********************
-Styling with Less
+Styling with Sass
 *********************
-If you're familiar with `Less <http://lesscss.org/>`_, you can style lists with our Less mixins.  First, you'll need to import the following library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style lists.
 
-.. code-block:: console
+.. code-block:: css
 
   @import '<npm module path>/vui-list/list';
 
+  ul {
+    @include vui-list;
+  }
 
-To apply list styling, call the ``#vui.List()`` mixin within your list's CSS selector:
+Lists can be rendered without separators by also calling the ``vui-list-no-separator`` mixin:
 
 .. code-block:: css
+
+  ul {
+    @include vui-list;
+    @include vui-list-no-separator;
+  }
+
+To render lists with less padding inside the items, also call the ``vui-list-compact`` mixin:
+
+.. code-block:: css
+
+  ul {
+    @include vui-list;
+    @include vui-list-compact;
+  }
+
+
+*********************
+Styling with Less
+*********************
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use Less to style lists, call the ``#vui.List()`` mixin within your list's CSS selector:
+
+.. code-block:: css
+
+  @import '<npm module path>/vui-list/list';
 
   ul {
     #vui.List();
@@ -70,14 +97,13 @@ To render lists with less padding inside the items, also call the ``#vui.List.co
 
 Item States
 ==================
-List items can be in two different states (or a combination of both states),
-and we expose different mixins for each state:
+List items can be in two different states (or a combination of both states), and we expose different mixins for each state:
 
 - **selected**: This state is reserved for lists that support the selection of items, either with checkboxes or radio buttons.
 
 - **active**: Clickable or selectable items are typically put into this state when the user's mouse hovers over them, or when they receive keyboard focus.
 
-To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.ListItem.active()`` sub-mixins. For items that are both selected and active, call ``#vui.ListItem.selected.active()``.
+To apply states to list items, call the list-item mixins as shown.
 
   .. role:: example
 
@@ -96,6 +122,24 @@ To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.
   </div>
   <br>
 
+Scss:
+
+.. code-block:: css
+
+  @import '<npm module path>/vui-list/list-item';
+
+  li:hover, li:focus {
+    @include vui-list-item-active;
+  }
+
+  li.selected {
+    @include vui-list-item-selected;
+    &:hover, &:focus {
+      @include vui-list-item-selected-active;
+    }
+  }
+
+Less:
 
 .. code-block:: css
 

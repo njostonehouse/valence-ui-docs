@@ -7,19 +7,38 @@ The `vui-offscreen <https://github.com/Brightspace/valence-ui-offscreen>`_ libra
 Off-screen elements are valuable from an accessibility perspective when you want to have elements that are hidden to sighted users while being recognizable for screen reader users. However, you should make sure to apply off-screen to the correct elements. If you hide elements that receive focus, this might confuse sighted users because they will not be able to see which element has focus. For more information, read `WebAIM's article on Invisible Content <http://webaim.org/techniques/css/invisiblecontent/>`_.
 
 *********************
-Styling with Less
+Styling with Sass
 *********************
-If you're familiar with `Less <http://lesscss.org/>`_, you can add off-screen styles with our Less mixins.  First, you'll need to import the following library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to position elements off-screen . Import and include the ``vui-offscreen`` mixin in your CSS selector.
 
-.. code-block:: console
+Scss:
+
+.. code-block:: css
 
   @import '<npm module path>/vui-offscreen/offscreen';
 
-To position an element offscreen, call the ``#vui.offscreen()`` mixin from within your selector.
+  .offscreen {
+    @include vui-offscreen;
+  }
+
+HTML:
+
+.. code-block:: html
+
+  <p class="offscreen">
+    This text will only be visible to screen readers.
+  </p>
+
+*********************
+Styling with Less
+*********************
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to position an element off-screen, import and include the ``#vui.offscreen`` mixin in your CSS selector.
 
 Less:
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-offscreen/offscreen';
 
   .offscreen {
     #vui.offscreen();

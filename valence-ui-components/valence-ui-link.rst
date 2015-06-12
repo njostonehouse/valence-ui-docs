@@ -16,17 +16,31 @@ The `vui-link <https://github.com/Brightspace/valence-ui-link>`_ library contain
   </div>
 
 *******************
-Styling with Less
+Styling with Scss
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, style your links with our Less mixins. First, you'll need to import the link library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style links. To apply the default link style, call the ``vui-link`` mixin from within your CSS selector.  To apply the primary link style, call the ``.vui-link-main`` mixin.
 
-.. code-block:: console
+.. code-block:: css
 
   @import '<npm module path>/vui-link/link'
 
-To apply the default link style, call the ``#vui.Link()`` mixin from within your CSS selector.  To apply the primary link style, call the ``#vui.Link.main()`` mixin.
+  a {
+    @include vui-link;
+  }
+
+  a.main {
+    @include vui-link-main;
+  }
+
+
+*******************
+Styling with Less
+*******************
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to style links, call the ``#vui.Link()`` or ``#vui.Link.main()`` mixin from within your CSS selector.
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-link/link'
 
   a {
     #vui.Link();
@@ -34,27 +48,6 @@ To apply the default link style, call the ``#vui.Link()`` mixin from within your
 
   a.main {
     #vui.Link.main();
-  }
-
-You can also override the link color and focus colors:
-
-.. code-block:: css
-
-  #vui.Link(
-    @color: #ff0000,
-    @color-focus: #0000ff
-  );
-
-These colors are also exposed as variables, which can be referenced in your Less:
-
-.. code-block:: css
-
-  .myLink {
-    color: @vui-link-color;
-  }
-
-  .myLink:hover, .myLink:focus {
-    color: @vui-link-color-focus;
   }
 
 *******************
