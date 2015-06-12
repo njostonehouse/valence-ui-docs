@@ -2,7 +2,7 @@
 List
 ##################
 
-The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contains Less mixins and CSS that you can use to style lists.
+The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contains mixins and CSS that you can use to style lists.
 
 .. role:: example
 
@@ -35,7 +35,7 @@ The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contain
 *********************
 Styling with Sass
 *********************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style lists.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style lists. A list can be styled using the ``vui-list`` mixin as shown.
 
 .. code-block:: css
 

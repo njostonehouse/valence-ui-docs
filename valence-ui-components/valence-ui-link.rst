@@ -2,7 +2,7 @@
 Link
 ####################
 
-The `vui-link <https://github.com/Brightspace/valence-ui-link>`_ library contains Less mixins and CSS that you can use to style links.
+The `vui-link <https://github.com/Brightspace/valence-ui-link>`_ library contains mixins and CSS that you can use to style links.
 
 .. role:: example
 

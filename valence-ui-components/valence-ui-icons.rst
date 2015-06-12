@@ -21,9 +21,7 @@ The `vui-icons <https://github.com/Brightspace/valence-ui-icons>`_ library provi
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to include icons in your CSS.
-
-To apply the general styling for icons, call the ``vui-icon`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui-filePdf`` mixin.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to include icons in your CSS. To apply the general styling for icons, call the ``vui-icon`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui-filePdf`` mixin.
 
 Scss:
 

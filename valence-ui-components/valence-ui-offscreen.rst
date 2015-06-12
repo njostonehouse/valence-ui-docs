@@ -2,7 +2,7 @@
 Off-screen
 ##################
 
-The `vui-offscreen <https://github.com/Brightspace/valence-ui-offscreen>`_ library provides a Less mixin and CSS for positioning elements off the screen.
+The `vui-offscreen <https://github.com/Brightspace/valence-ui-offscreen>`_ library provides mixins and CSS for positioning elements off the screen.
 
 Off-screen elements are valuable from an accessibility perspective when you want to have elements that are hidden to sighted users while being recognizable for screen reader users. However, you should make sure to apply off-screen to the correct elements. If you hide elements that receive focus, this might confuse sighted users because they will not be able to see which element has focus. For more information, read `WebAIM's article on Invisible Content <http://webaim.org/techniques/css/invisiblecontent/>`_.
 

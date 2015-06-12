@@ -20,9 +20,7 @@ The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library con
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style buttons. Import and include the ``vui-button`` mixin in your CSS selector.
-
-In addition, you can apply primary button styles by also using the ``vui-button-primary`` mixin.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style buttons. Import and include the ``vui-button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``vui-button-primary`` mixin.
 
 Scss:
 
@@ -50,9 +48,7 @@ HTML:
 *******************
 Styling with Less
 *******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling buttons, import and include the ``#vui.Button`` mixin in your CSS selector.
-
-In addition, you can apply primary button styles by also using the ``#vui.Button.primary()`` mixin.
+**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling buttons, import and include the ``#vui.Button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``#vui.Button.primary()`` mixin.
 
 Less:
 
@@ -93,7 +89,7 @@ If you prefer to use CSS to style elements, bundle the **button.css** file with 
 *******************
 Buttons with Icons
 *******************
-To include an icon inside a button, add a ``<span>`` element inside the button and apply the appropriate Less mixin or CSS class for the icon.  For more information, see :doc:`Icons <../valence-ui-components/valence-ui-icons>`.
+To include an icon inside a button, add a ``<span>`` element inside the button and apply the appropriate mixin or CSS class for the icon.  For more information, see :doc:`Icons <../valence-ui-components/valence-ui-icons>`.
 
 .. role:: example
 
@@ -161,7 +157,7 @@ Less:
   }
 
 
-HTML using Scss or Less:
+HTML using CSS generated from Sass or Less:
 
 .. code-block:: html
 
