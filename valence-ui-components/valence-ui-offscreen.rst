@@ -30,30 +30,6 @@ HTML:
   </p>
 
 *********************
-Styling with Less
-*********************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to position an element off-screen, import and include the ``#vui.offscreen`` mixin in your CSS selector.
-
-Less:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-offscreen/offscreen';
-
-  .offscreen {
-    #vui.offscreen();
-  }
-
-HTML:
-
-.. code-block:: html
-
-  <p class="offscreen">
-    This text will only be visible to screen readers.
-  </p>
-
-
-*********************
 Styling with CSS
 *********************
 If you'd prefer to use CSS to style lists, bundle the provided **offscreen.css** file with your application's CSS. Then apply the ``.vui-offscreen`` class to your element.

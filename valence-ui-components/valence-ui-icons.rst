@@ -2,7 +2,7 @@
 Icons
 ##################
 
-The `vui-icons <https://github.com/Brightspace/valence-ui-icons>`_ library provides Less mixins and CSS classes for adding icons to your app. All icons are available in the "small" size of 16x16. The file icons are available in three different sizes: 16x16 (small), 24x24 (large), and 50x50 (xlarge).
+The `vui-icons <https://github.com/Brightspace/valence-ui-icons>`_ library provides mixins and CSS classes for adding icons to your app. All icons are available in the "small" size of 16x16. The file icons are available in three different sizes: 16x16 (small), 24x24 (large), and 50x50 (xlarge).
 
 .. role:: example
 
@@ -53,49 +53,10 @@ HTML:
   <span class="icon-filePdfLarge"></span>
   <span class="icon-filePdfXLarge"></span>
 
-
-*******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to include icons in your CSS, import and include the mixins for the desired icons in your CSS selector.
-
-To apply the general styling for icons, call the ``#vui.Icon()`` mixin from within the icon's CSS selector.  Then call the appropriate mixin for the specified icon. For example, the small PDF file icon is generated with the ``vui.Icon.filePdf()`` mixin.
-
-Less:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-icons/icons';
-
-  [class^=icon] {
-    #vui.Icon();
-  }
-
-  .icon-filePdf {
-    #vui.Icon.filePdf();
-  }
-
-  .icon-filePdfLarge {
-    #vui.Icon.filePdfLarge();
-  }
-
-  .icon-filePdfXLarge {
-    #vui.Icon.filePdfXLarge();
-  }
-
-HTML:
-
-.. code-block:: html
-
-  <span class="icon-filePdf"></span>
-  <span class="icon-filePdfLarge"></span>
-  <span class="icon-filePdfXLarge"></span>
-
-
 *******************
 Styling with CSS
 *******************
-If you’d prefer to use plain CSS instead of Less, bundle the **icons.css** file with your application’s CSS. Then apply the specified CSS class name on a ``<span>`` element.
+If you’d prefer to use plain CSS instead of Sass, bundle the **icons.css** file with your application’s CSS. Then apply the specified CSS class name on a ``<span>`` element.
 
 .. code-block:: html
 
@@ -107,14 +68,14 @@ If you’d prefer to use plain CSS instead of Less, bundle the **icons.css** fil
 *********************
 Available Icons
 *********************
-In the Less mixins, the icons are named with the following conventions:
+In the Sass mixins, the icons are named with the following conventions:
 
 .. raw:: html
 
   <ul>
-    <li>action<i>Verb</i> (examples: <tt>actionDownload</tt>, <tt>actionEditBulk</tt>)</li>
-    <li>file<i>TypeSize</i>  (examples: <tt>fileVideo</tt>, <tt>fileVideoXLarge</tt>)</li>
-    <li>property<i>PropertyName</i> (examples: <tt>propertyDateRestricted</tt>, <tt>propertyLocked</tt>)</li>
+    <li>vui-action<i>Verb</i> (examples: <tt>vui-actionDownload</tt>, <tt>vui-actionEditBulk</tt>)</li>
+    <li>vui-file<i>TypeSize</i>  (examples: <tt>vui-fileVideo</tt>, <tt>vui-fileVideoXLarge</tt>)</li>
+    <li>vui-property<i>PropertyName</i> (examples: <tt>vui-propertyDateRestricted</tt>, <tt>vui-propertyLocked</tt>)</li>
   </ul>
 
 In the CSS, the icons are named with the following conventions:
@@ -210,4 +171,4 @@ Other
       <li><div class="vui-icon-expand-h"></div>expandHover</li>
       <li><div class="vui-icon-expand"></div>expand</li>
     </ul>
-	</div>
+  </div>

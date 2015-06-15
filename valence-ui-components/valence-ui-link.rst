@@ -32,24 +32,6 @@ If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mi
     @include vui-link-main;
   }
 
-
-*******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to style links, call the ``#vui.Link()`` or ``#vui.Link.main()`` mixin from within your CSS selector.
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-link/link'
-
-  a {
-    #vui.Link();
-  }
-
-  a.main {
-    #vui.Link.main();
-  }
-
 *******************
 Styling with CSS
 *******************

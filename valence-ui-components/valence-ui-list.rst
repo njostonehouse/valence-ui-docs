@@ -63,38 +63,6 @@ To render lists with less padding inside the items, also call the ``vui-list-com
     @include vui-list-compact;
   }
 
-
-*********************
-Styling with Less
-*********************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use Less to style lists, call the ``#vui.List()`` mixin within your list's CSS selector:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-list/list';
-
-  ul {
-    #vui.List();
-  }
-
-Lists can be rendered without separators by also calling the ``#vui.List.noSeparator()`` sub-mixin:
-
-.. code-block:: css
-
-  ul {
-    #vui.List();
-    #vui.List.noSeparator();
-  }
-
-To render lists with less padding inside the items, also call the ``#vui.List.compact()`` sub-mixin:
-
-.. code-block:: css
-
-  ul {
-    #vui.List();
-    #vui.List.compact();
-  }
-
 Item States
 ==================
 List items can be in two different states (or a combination of both states), and we expose different mixins for each state:
@@ -139,23 +107,6 @@ Scss:
     }
   }
 
-Less:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-list/list-item';
-
-  li:hover, li:focus {
-    #vui.ListItem.active();
-  }
-
-  li.selected {
-    #vui.ListItem.selected();
-    &:hover, &:focus {
-      #vui.ListItem.selected.active();
-    }
-  }
-
 In this example, we applied the *active* state to any list items that receive focus or hover.  Also, we created a new selector to apply the *selected* state.  Some JavaScript is used to toggle the ``selected`` class when the radio button is checked.
 
 *********************
@@ -173,7 +124,7 @@ Apply the ``.vui-list`` class to your list elements:
   </ul>
 
 
-Similar to the Less mixin, you can disable the separators between list items
+Similar to the Sass mixin, you can disable the separators between list items
 by adding the ``.vui-no-separator`` class:
 
 .. code-block:: css

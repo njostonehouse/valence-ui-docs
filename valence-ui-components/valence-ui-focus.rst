@@ -20,22 +20,9 @@ If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mi
   }
 
 *******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them to apply focus outline styles, import and include the ``#vui.focusOutline`` mixin in your CSS selector.
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-focus/focus';
-
-  a:focus {
-    #vui.focusOutline();
-  }
-
-*******************
 Styling with CSS
 *******************
-If you'd prefer to use plain CSS instead of Less, bundle the **focus.css** file with your application's CSS. Then apply the ``.vui-outline`` class to any element in your HTML. When that element receives focus, the outline style is applied automatically.
+If you'd prefer to use plain CSS instead of Sass, bundle the **focus.css** file with your application's CSS. Then apply the ``.vui-outline`` class to any element in your HTML. When that element receives focus, the outline style is applied automatically.
 
 .. code-block:: html
 

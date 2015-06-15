@@ -46,34 +46,6 @@ HTML:
   <button disabled="disabled">Button 4</button>
 
 *******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling buttons, import and include the ``#vui.Button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``#vui.Button.primary()`` mixin.
-
-Less:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-button/button'
-
-  button, input[type=button] {
-    #vui.Button();
-  }
-
-  button.primary {
-    #vui.Button.primary();
-  }
-
-HTML:
-
-.. code-block:: html
-
-  <button class="primary">Button 1</button>
-  <button>Button 2</button>
-  <input type="button" value="Button 3" />
-  <button disabled="disabled">Button 4</button>
-
-*******************
 Styling with CSS
 *******************
 If you prefer to use CSS to style elements, bundle the **button.css** file with your application's CSS. Then apply the ``.vui-button`` and ``.vui-button-primary`` classes to your button elements.
@@ -139,25 +111,7 @@ Scss:
     @include vui-actionEdit;
   }
 
-Less:
-
-.. code-block:: css
-
-  .icon-bookmark,
-  .icon-edit {
-    #vui.Icon();
-  }
-
-  .icon-bookmark {
-    #vui.Icon.actionBookmark();
-  }
-
-  .icon-edit {
-    #vui.Icon.actionEdit();
-  }
-
-
-HTML using CSS generated from Sass or Less:
+HTML using CSS generated from Sass:
 
 .. code-block:: html
 

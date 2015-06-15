@@ -26,22 +26,9 @@ If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mi
   }
 
 *******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling alerts, import and include the ``#vui.Alerts.error`` mixin in your CSS selector:
-
-.. code-block:: css
-
-  @import '<npm module path>/vui-alerts/error';
-
-  .my-error-alert {
-    #vui.Alerts.error();
-  }
-
-*******************
 Styling with CSS
 *******************
-If you'd prefer to use plain CSS instead of Less to apply the error alert style, bundle the **error.css** file with your application's CSS. Then apply the ``.vui-error`` class to a containing element in your HTML.
+If you'd prefer to use plain CSS instead of Sass to apply the error alert style, bundle the **error.css** file with your application's CSS. Then apply the ``.vui-error`` class to a containing element in your HTML.
 
 .. code-block:: html
 
