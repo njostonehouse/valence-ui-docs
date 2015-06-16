@@ -173,7 +173,7 @@ The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library conta
 
 Styling with Sass
 ==================
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style fields and labels. Import and include the mixins in your CSS selector.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style fields and labels. Import and include the mixins in your CSS selector.
 
 Form fields (checkboxes, text inputs, etc.) can be grouped by calling the ``vui-field-row`` mixin, which gives the field a standard bottom margin. This mixin would typically be applied to a ``<div>`` (or other element) used to surround each field.
 
@@ -337,7 +337,7 @@ When you have more than one related form element, group them together using the 
 
 Styling with Sass
 ==================
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style fieldsets. Apply the ``vui-field-row`` mixin to the ``<fieldset>`` element and apply the ``vui-label`` mixin to the ``<legend>`` element.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style fieldsets. Apply the ``vui-field-row`` mixin to the ``<fieldset>`` element and apply the ``vui-label`` mixin to the ``<legend>`` element.
 
 Scss:
 

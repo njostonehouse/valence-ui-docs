@@ -9,7 +9,7 @@ In most cases, you'll want to use this library on elements that do not already h
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply focus styling to elements. Import and include the ``vui-focus-outline`` mixin in your CSS selector. Usually the ``focus`` pseudo-selector is included as shown.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to apply focus styling to elements. Import and include the ``vui-focus-outline`` mixin in your CSS selector. Usually the ``focus`` pseudo-selector is included as shown.
 
 .. code-block:: css
 

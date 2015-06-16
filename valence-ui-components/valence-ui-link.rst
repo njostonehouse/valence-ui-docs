@@ -18,7 +18,7 @@ The `vui-link <https://github.com/Brightspace/valence-ui-link>`_ library contain
 *******************
 Styling with Scss
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style links. To apply the default link style, call the ``vui-link`` mixin from within your CSS selector.  To apply the primary link style, call the ``.vui-link-main`` mixin.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style links. To apply the default link style, call the ``vui-link`` mixin from within your CSS selector.  To apply the primary link style, call the ``.vui-link-main`` mixin.
 
 .. code-block:: css
 

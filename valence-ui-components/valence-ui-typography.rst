@@ -24,7 +24,7 @@ You can apply default text styling to a block-level element (for example, ``<bod
 
 Styling with Sass
 ==================
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to apply typographic style. Import and include the ``vui-typography`` mixin in your CSS selector.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to apply typographic style. Import and include the ``vui-typography`` mixin in your CSS selector.
 
 .. code-block:: css
 

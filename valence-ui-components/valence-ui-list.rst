@@ -35,7 +35,7 @@ The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contain
 *********************
 Styling with Sass
 *********************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style lists. A list can be styled using the ``vui-list`` mixin as shown.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style lists. A list can be styled using the ``vui-list`` mixin as shown.
 
 .. code-block:: css
 

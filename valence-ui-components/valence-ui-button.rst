@@ -20,7 +20,7 @@ The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library con
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style buttons. Import and include the ``vui-button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``vui-button-primary`` mixin.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style buttons. Import and include the ``vui-button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``vui-button-primary`` mixin.
 
 Scss:
 

@@ -21,7 +21,7 @@ The `vui-breadcrumbs <https://github.com/Brightspace/valence-ui-breadcrumbs>`_ l
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style breadcrumbs. Import and include the ``vui-breadcrumbs`` mixin in your CSS selector.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style breadcrumbs. Import and include the ``vui-breadcrumbs`` mixin in your CSS selector.
 
 Scss:
 

@@ -9,7 +9,7 @@ Off-screen elements are valuable from an accessibility perspective when you want
 *********************
 Styling with Sass
 *********************
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to position elements off-screen . Import and include the ``vui-offscreen`` mixin in your CSS selector.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to position elements off-screen . Import and include the ``vui-offscreen`` mixin in your CSS selector.
 
 Scss:
 
