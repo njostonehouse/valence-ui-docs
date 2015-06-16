@@ -50,7 +50,7 @@ The `vui-input <https://github.com/Brightspace/valence-ui-input>`_ library conta
 
 Styling with Sass
 ==================
-If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our Sass mixins to style forms. Styles can be applied to ``<input>``, ``<textarea>`` and ``<select>`` elements by calling the ``vui-input``, ``vui-input-textarea``, ``vui-input-select`` mixins, respectively.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style forms. Styles can be applied to ``<input>``, ``<textarea>`` and ``<select>`` elements by calling the ``vui-input``, ``vui-input-textarea``, ``vui-input-select`` mixins, respectively.
 
 Sass:
 
