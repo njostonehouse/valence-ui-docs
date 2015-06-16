@@ -96,7 +96,7 @@ Then call the ``#vui.changed()`` mixin within the ``.vui-changed`` class selecto
 .. code-block:: css
 
   .vui-changed {
-    #vui.changed();
+    @include vui-changed;
   }
 
 *******************
