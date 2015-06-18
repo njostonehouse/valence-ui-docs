@@ -17,6 +17,8 @@ Styling with Sass
 *******************
 If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to apply the alert styles. Import and include the ``vui-alerts-error`` mixin in your CSS selector:
 
+Scss:
+
 .. code-block:: css
 
   @import '<npm module path>/vui-alerts/error';
@@ -25,6 +27,14 @@ If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins 
     @include vui-alerts-error;
   }
 
+HTML:
+
+.. code-block:: html
+
+  <div class="my-error-alert">
+    This is an error message.
+  </div>
+
 *******************
 Styling with CSS
 *******************
@@ -32,4 +42,6 @@ If you'd prefer to use plain CSS instead of Sass to apply the error alert style,
 
 .. code-block:: html
 
-  <div class="vui-error">This is an error messsage.</div>
+  <div class="vui-error">
+    This is an error messsage.
+  </div>
