@@ -102,7 +102,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
         @include vui-input;
       }
       .vui-changed {
-        #vui.changed();
+        @include vui-changed;
       }
 
 3.  We'll create a simple HTML file to display page and its details.  Notice that because we are using :doc:`change tracking <../valence-ui-components/valence-ui-jquery-change-tracking>`, which is a jQuery-based widget, we need to include `jQuery <http://jquery.com/>`_ and `jQuery UI <http://jqueryui.com/>`_.
