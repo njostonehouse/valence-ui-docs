@@ -71,7 +71,7 @@ List items can be in two different states (or a combination of both states), and
 
 - **active**: Clickable or selectable items are typically put into this state when the user's mouse hovers over them, or when they receive keyboard focus.
 
-To create styles for list item states, call the list-item mixins as shown, and apply class names to the items as needed.
+To create styles for list item states, call the list-item mixins as shown, and apply the CSS class names to the items as needed.
 
 .. role:: example
 
