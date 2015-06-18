@@ -2,36 +2,39 @@
 
 	'use strict';
 
-	var $list = $( '#liststates' );
+	$(document).ready(function() {
 
-	var updateListSelection = function() {
+		var $list = $( '#liststates' );
 
-		$list.find( 'li.vradio > label > input' ).each(
-			function ( index, inputNode ) {
+		var updateListSelection = function() {
 
-				var $input = $( inputNode );
+			$list.find( 'li.vradio > label > input' ).each(
+				function ( index, inputNode ) {
 
-				$input.closest( 'li.vradio' ).toggleClass(
-					'selected', $input.prop( 'checked' )
-				);
+					var $input = $( inputNode );
 
+					$input.closest( 'li.vradio' ).toggleClass(
+						'selected', $input.prop( 'checked' )
+					);
+
+				}
+			);
+
+		};
+
+		updateListSelection();
+
+		$list.change( function( args ) {
+
+			var $target = $( args.target );
+
+			if ( $target.attr( 'type' ) === 'radio' ) {
+				updateListSelection();
 			}
-		);
 
-	};
+		} );
 
-	updateListSelection();
-
-	$list.change( function( args ) {
-
-		var $target = $( args.target );
-
-		if ( $target.attr( 'type' ) === 'radio' ) {
-			console.log($target);
-			updateListSelection();
-		}
-
-	} );
+	});
 
 } )();
 
