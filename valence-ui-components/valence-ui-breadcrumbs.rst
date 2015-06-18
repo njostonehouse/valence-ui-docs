@@ -2,7 +2,7 @@
 Breadcrumbs
 ##################
 
-The `vui-breadcrumbs <https://github.com/Brightspace/valence-ui-breadcrumbs>`_ library contains a series of Less mixins and CSS that you can use to style breadcrumbs.
+The `vui-breadcrumbs <https://github.com/Brightspace/valence-ui-breadcrumbs>`_ library contains mixins and CSS that you can use to style breadcrumbs. In most cases you'll want to apply the CSS class to an ordered list, however this is not required.
 
 .. role:: example
 
@@ -19,24 +19,19 @@ The `vui-breadcrumbs <https://github.com/Brightspace/valence-ui-breadcrumbs>`_ l
   </div>
 
 *******************
-Styling with Less
+Styling with Sass
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, style your breadcrumbs with our Less mixins. First, you'll need to import the breadcrumbs library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style breadcrumbs. Import and include the ``vui-breadcrumbs`` mixin in your CSS selector.
 
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-breadcrumbs/breadcrumbs'
-
-You can apply breadcrumb styles by implementing the ``#vui.Breadcrumbs()`` mixin on your breadcrumb container.
-
-Less:
+Scss:
 
 .. code-block:: css
 
-    ol.breadcrumbs {
-      #vui.Breadcrumbs();
-    }
+  @import '<npm module path>/vui-breadcrumbs/breadcrumbs';
+
+  .breadcrumbs {
+    @include vui-breadcrumbs;
+  }
 
 HTML:
 

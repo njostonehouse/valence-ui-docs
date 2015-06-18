@@ -2,7 +2,7 @@
 List
 ##################
 
-The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contains Less mixins and CSS that you can use to style lists.
+The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contains mixins and CSS that you can use to style lists.
 
 .. role:: example
 
@@ -33,53 +33,47 @@ The `vui-list <https://github.com/Brightspace/valence-ui-list>`_ library contain
   </div>
 
 *********************
-Styling with Less
+Styling with Sass
 *********************
-If you're familiar with `Less <http://lesscss.org/>`_, you can style lists with our Less mixins.  First, you'll need to import the following library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style lists. A list can be styled using the ``vui-list`` mixin as shown.
 
-.. code-block:: console
+.. code-block:: css
 
   @import '<npm module path>/vui-list/list';
 
-
-To apply list styling, call the ``#vui.List()`` mixin within your list's CSS selector:
-
-.. code-block:: css
-
   ul {
-    #vui.List();
+    @include vui-list;
   }
 
-Lists can be rendered without separators by also calling the ``#vui.List.noSeparator()`` sub-mixin:
+Lists can be rendered without separators by also calling the ``vui-list-no-separator`` mixin:
 
 .. code-block:: css
 
   ul {
-    #vui.List();
-    #vui.List.noSeparator();
+    @include vui-list;
+    @include vui-list-no-separator;
   }
 
-To render lists with less padding inside the items, also call the ``#vui.List.compact()`` sub-mixin:
+To render lists with less padding inside the items, also call the ``vui-list-compact`` mixin:
 
 .. code-block:: css
 
   ul {
-    #vui.List();
-    #vui.List.compact();
+    @include vui-list;
+    @include vui-list-compact;
   }
 
 Item States
 ==================
-List items can be in two different states (or a combination of both states),
-and we expose different mixins for each state:
+List items can be in two different states (or a combination of both states), and we expose different mixins for each state:
 
 - **selected**: This state is reserved for lists that support the selection of items, either with checkboxes or radio buttons.
 
 - **active**: Clickable or selectable items are typically put into this state when the user's mouse hovers over them, or when they receive keyboard focus.
 
-To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.ListItem.active()`` sub-mixins. For items that are both selected and active, call ``#vui.ListItem.selected.active()``.
+To create styles for list item states, call the list-item mixins as shown, and apply the CSS class names to the items as needed.
 
-  .. role:: example
+.. role:: example
 
 :example:`Example`
 
@@ -88,27 +82,27 @@ To apply states to list items, call the ``#vui.ListItem.selected()`` and ``#vui.
   <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example2">
       <ul id="liststates" class="vui-compact vui-no-separator">
-        <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>
+        <li class="vradio"><label><input name="list_group_1" type="radio" checked /> item 1</label></li>
         <li class="vradio"><label><input name="list_group_1" type="radio" /> item 2</label></li>
         <li class="vradio"><label><input name="list_group_1" type="radio" /> item 3</label></li>
       </ul>
     </div>
   </div>
-  <br>
 
+Scss:
 
 .. code-block:: css
 
   @import '<npm module path>/vui-list/list-item';
 
   li:hover, li:focus {
-    #vui.ListItem.active();
+    @include vui-list-item-active;
   }
 
   li.selected {
-    #vui.ListItem.selected();
+    @include vui-list-item-selected;
     &:hover, &:focus {
-      #vui.ListItem.selected.active();
+      @include vui-list-item-selected-active;
     }
   }
 
@@ -129,7 +123,7 @@ Apply the ``.vui-list`` class to your list elements:
   </ul>
 
 
-Similar to the Less mixin, you can disable the separators between list items
+Similar to the Sass mixin, you can disable the separators between list items
 by adding the ``.vui-no-separator`` class:
 
 .. code-block:: css

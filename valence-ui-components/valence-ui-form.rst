@@ -9,7 +9,7 @@ Forms are typically comprised of fields, labels, and inputs.
 *********************
 Text Inputs
 *********************
-The `vui-input <https://github.com/Brightspace/valence-ui-input>`_ library contains Less mixins and CSS that can be used to style inputs.
+The `vui-input <https://github.com/Brightspace/valence-ui-input>`_ library contains mixins and CSS that can be used to style inputs.
 
 .. role:: example
 
@@ -48,39 +48,33 @@ The `vui-input <https://github.com/Brightspace/valence-ui-input>`_ library conta
   </div>
   </div>
 
-Styling with Less
+Styling with Sass
 ==================
-To apply styling to text inputs with Less, first import the following libraries into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style forms. Styles can be applied to ``<input>``, ``<textarea>`` and ``<select>`` elements by calling the ``vui-input``, ``vui-input-textarea``, ``vui-input-select`` mixins, respectively.
 
-.. code-block:: console
+Sass:
+
+.. code-block:: css
 
   @import '<npm module path>/vui-input/input';
   @import '<npm module path>/vui-input/textarea';
   @import '<npm module path>/vui-input/select';
 
-
-Styles can be applied to ``<input>``, ``<textarea>`` and ``<select>`` elements by calling the ``#vui.Input()``, ``#vui.Input.textarea()``, ``#vui.Input.select()`` mixins, respectively.
-
-Less:
-
-.. code-block:: css
-
   input,
   input[type="text"],
   input[type="password"],
   input[type="email"],
-  input[type="url"]
-  {
-    #vui.Input();
+  input[type="url"] {
+    @include vui-input;
   }
 
   textarea {
-    #vui.Input.textarea();
-  }
-  select {
-    #vui.Input.select();
+    @include vui-input-textarea;
   }
 
+  select {
+    @include vui-input-select;
+  }
 
 HTML:
 
@@ -148,7 +142,7 @@ To style text inputs with CSS, apply the ``.vui-input`` class to the  ``<input>`
 Fields and Labels
 *********************
 
-The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library contain a series of Less mixins and CSS that can be used to style fields and labels.
+The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library contains mixins and CSS that can be used to style fields and labels.
 
 .. admonition::  Accessibility
 
@@ -177,35 +171,31 @@ The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library conta
     </div>
   </div>
 
-Styling with Less
+Styling with Sass
 ==================
-If you're familiar with `Less <http://lesscss.org/>`_, style your fields and labels with our Less mixins.  First, you'll need to import the following  libraries into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style fields and labels. Import and include the mixins in your CSS selector.
 
-.. code-block:: console
+Form fields (checkboxes, text inputs, etc.) can be grouped by calling the ``vui-field-row`` mixin, which gives the field a standard bottom margin. This mixin would typically be applied to a ``<div>`` (or other element) used to surround each field.
+
+To style field labels, call the ``vui-label`` mixin from within the ``label`` selector.
+
+Scss:
+
+.. code-block:: css
 
   @import '<npm module path>/vui-field/label';
   @import '<npm module path>/vui-field/field';
 
-
-Form fields (checkboxes, text inputs, etc.) can be grouped by calling the
-``#vui.FieldRow()`` mixin, which gives the field a standard bottom margin. This mixin would typically be applied to a ``<div>`` (or other element) used to surround each field.
-
-To style field labels, call the ``#vui.Label()`` mixin from within the ``label`` selector.
-
-Less:
-
-.. code-block:: css
-
   .myFieldRow {
-    #vui.FieldRow();
+    @include vui-field-row;
   }
 
   .myFieldRow > label {
-    #vui.Label();
+    @include vui-label;
   }
 
   input {
-    #vui.Input();
+    @include vui-input;
   }
 
 HTML:
@@ -227,7 +217,7 @@ HTML:
 
 Styling with CSS
 ==================
-If you'd prefer to use CSS instead of Less, you can group and stack form fields vertically by applying the ``.vui-field-row`` class. Then apply the ``.vui-label`` class to a ``<label>`` element.
+If you'd prefer to use CSS instead of Sass, you can group and stack form fields vertically by applying the ``.vui-field-row`` class. Then apply the ``.vui-label`` class to a ``<label>`` element.
 
 The ``.vui-field-row`` class gives the field a standard bottom margin.
 
@@ -249,7 +239,7 @@ The ``.vui-field-row`` class gives the field a standard bottom margin.
 ****************
 Required Fields
 ****************
-The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library contain Less mixins and CSS that can be used to indicate whether a field is required.  A required field is distinguished with a red asterisk (*).
+The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library contains mixins and CSS that can be used to indicate whether a field is required.  A required field is distinguished with a red asterisk (*).
 
 .. role:: example
 
@@ -271,19 +261,18 @@ The `vui-field <https://github.com/Brightspace/valence-ui-field>`_ library conta
   It's important to note that a required field is indicated with `just a visual flag`. To ensure you meet accessibility requirements, mark up the corresponding input with the `HTML5 "required" attribute <http://www.w3.org/html/wg/drafts/html/master/forms.html#the-required-attribute>`_ and the `"aria-required" attribute <http://www.w3.org/TR/wai-aria/states_and_properties#aria-required>`_. For more information, see
   `MDN: Using the aria-required attribute <https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_attribute>`_.
 
-
-Styling with Less
+Styling with Sass
 ==================
-A field can be visually flagged as required by applying the ``#vui.Label.required()`` mixin to a selector.
+A field can be visually flagged as required by applying the ``vui-label-required`` mixin to a selector.
 
-Less:
+Scss:
 
 .. code-block:: css
 
   @import '<npm module path>/vui-field/label';
 
   .required {
-    #vui.Label.required();
+    @include vui-label-required;
   }
 
 HTML:
@@ -296,7 +285,6 @@ HTML:
       <input type="text" placeholder="Enter your name" aria-required="true" required />
     </label>
   </div>
-
 
 Styling with CSS
 ==================
@@ -347,11 +335,11 @@ When you have more than one related form element, group them together using the 
     </fieldset>
   </div>
 
-Styling with Less
+Styling with Sass
 ==================
-Apply the ``#vui.FieldRow()`` mixin to the ``<fieldset>`` element and apply the ``#vui.Label()`` mixin to the ``<legend>`` element.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style fieldsets. Apply the ``vui-field-row`` mixin to the ``<fieldset>`` element and apply the ``vui-label`` mixin to the ``<legend>`` element.
 
-Less:
+Scss:
 
 .. code-block:: css
 
@@ -359,10 +347,10 @@ Less:
   @import '<npm module path>/vui-field/label';
 
   .myFieldRow, fieldset {
-    #vui.FieldRow();
+    @include vui-field-row;
   }
   .myFieldRow > label, legend {
-    #vui.Label();
+    @include vui-label;
   }
 
 HTML:
@@ -406,5 +394,4 @@ Apply the ``.vui-field-row`` class to the ``<fieldset>`` element and apply the `
       Relish
     </label>
   </fieldset>
-
 

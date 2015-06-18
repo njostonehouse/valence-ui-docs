@@ -2,7 +2,7 @@
 Change Tracking
 ##################
 
-The `jquery-vui-change-tracking <https://github.com/Brightspace/jquery-valence-ui-change-tracking>`_ library provides jQuery-based widgets, events, Less mixins, and CSS that can be used to visually indicate unsaved changes to form inputs.  When a user changes the input value for a field, the field is highlighted with a background color.
+The `jquery-vui-change-tracking <https://github.com/Brightspace/jquery-valence-ui-change-tracking>`_ library provides jQuery-based widgets, events, mixins, and CSS that can be used to visually indicate unsaved changes to form inputs.  When a user changes the input value for a field, the field is highlighted with a background color.
 
 .. role:: example
 
@@ -83,26 +83,22 @@ To initialize the change tracking widgets:
 In the example above, changes are tracked for inputs that specify the ``.input-tracking`` class.  The changes are highlighted on the containing element that has the ``.tracker`` class.
 
 *********************
-Styling with Less
+Styling with Sass
 *********************
-If you're familiar with `Less <http://lesscss.org/>`_, you can apply the change tracking style with the ``#vui.changed()`` mixin. First, you'll need to import the following library into your Less file:
-
-.. code-block:: console
-
-  @import '<npm module path>/jquery-vui-change-tracking/changeTracking';
-
-Then call the ``#vui.changed()`` mixin within the ``.vui-changed`` class selector:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can apply the change tracking style with the ``vui-changed`` mixin. Import and include the ``vui-changed`` mixin within the ``.vui-changed`` class selector:
 
 .. code-block:: css
 
+  @import '<npm module path>/jquery-vui-change-tracking/changeTracking';
+
   .vui-changed {
-    #vui.changed();
+    @include vui-changed;
   }
 
 *******************
 Styling with CSS
 *******************
-If you'd prefer to use plain CSS instead of Less, bundle the **changeTracking.css** file with your application's CSS. The ``.vui-changed`` style will be used by the change tracking widgets to apply the highlighting style to the changed elements.
+If you'd prefer to use plain CSS instead of Sass, bundle the **changeTracking.css** file with your application's CSS. The ``.vui-changed`` style will be used by the change tracking widgets to apply the highlighting style to the changed elements.
 
 
 **********************

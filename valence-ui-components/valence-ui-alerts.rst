@@ -15,50 +15,33 @@ The `vui-alerts <https://github.com/Brightspace/valence-ui-alerts>`_ library con
 *******************
 Styling with Sass
 *******************
-If you're familiar with `Sass <http://sass-lang.com/>`_, use our Sass mixins to apply the alert styles.
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to apply the alert styles. Import and include the ``vui-alerts-error`` mixin in your CSS selector:
 
-To apply the **error** alerts style, import the following library:
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-alerts/error';
-
-Then include the ``vui-alerts-error`` mixin statment from within your CSS selector:
+Scss:
 
 .. code-block:: css
+
+  @import '<npm module path>/vui-alerts/error';
 
   .my-error-alert {
     @include vui-alerts-error;
   }
 
-*******************
-Styling with Less
-*******************
-**Note:** `Less <http://lesscss.org/>`_ mixins are still included for backwards compatibility, however these will likely be removed in a future version.  If you still want to use them for styling alerts, you'll need to import the alerts library into your Less file:
+HTML:
 
-.. code-block:: console
+.. code-block:: html
 
-  @import '<npm module path>/vui-alerts/alerts';
-
-To apply the **error** alerts style, import the following library:
-
-.. code-block:: console
-
-  @import '<npm module path>/vui-alerts/error';
-
-Then call the ``#vui.Alerts.error();`` mixin from within your CSS selector:
-
-.. code-block:: css
-
-  .my-error-alert {
-    #vui.Alerts.error();
-  }
+  <div class="my-error-alert">
+    This is an error message.
+  </div>
 
 *******************
 Styling with CSS
 *******************
-If you'd prefer to use plain CSS instead of Less to apply the error alert style, bundle the **error.css** file with your application's CSS. Then apply the ``.vui-error`` class to a containing element in your HTML.
+If you'd prefer to use plain CSS instead of Sass to apply the error alert style, bundle the **error.css** file with your application's CSS. Then apply the ``.vui-error`` class to a containing element in your HTML.
 
 .. code-block:: html
 
-  <div class="vui-error">This is an error messsage.</div>
+  <div class="vui-error">
+    This is an error messsage.
+  </div>

@@ -2,7 +2,7 @@
 Button
 ##################
 
-The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library contains Less mixins and CSS that you can use to style buttons.
+The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library contains mixins and CSS that you can use to style buttons.
 
 .. role:: example
 
@@ -18,41 +18,37 @@ The `vui-button <https://github.com/Brightspace/valence-ui-button>`_ library con
   </div>
 
 *******************
-Styling with Less
+Styling with Sass
 *******************
-If you're familiar with `Less <http://lesscss.org/>`_, style your buttons with our Less mixins.  First, you'll need to import the button library into your Less file:
+If you're familiar with `Sass <http://sass-lang.com/>`_, you can use our mixins to style buttons. Import and include the ``vui-button`` mixin in your CSS selector. In addition, you can apply primary button styles by also using the ``vui-button-primary`` mixin.
 
-.. code-block:: console
-
-	@import '<npm module path>/vui-button/button'
-
-To apply button styling to an element, call the ``#vui.Button()`` mixin from within your CSS selector. You can also make an element a primary button by calling the ``#vui.Button.primary()`` mixin.
-
-Less:
+Scss:
 
 .. code-block:: css
 
+  @import '<npm module path>/vui-button/button';
+
   button, input[type=button] {
-    #vui.Button();
+    @include vui-button;
   }
+
   button.primary {
-    #vui.Button.primary();
+    @include vui-button-primary;
   }
 
 HTML:
 
 .. code-block:: html
 
-	<button class="primary">Button 1</button>
-	<button>Button 2</button>
-	<input type="button" value="Button 3" />
-	<button disabled="disabled">Button 4</button>
+  <button class="primary">Button 1</button>
+  <button>Button 2</button>
+  <input type="button" value="Button 3" />
+  <button disabled="disabled">Button 4</button>
 
 *******************
 Styling with CSS
 *******************
-If you prefer to use CSS to style elements, bundle the **button.css** file with
-your application's CSS. Then apply the ``.vui-button`` and ``.vui-button-primary`` classes to your button elements.
+If you prefer to use CSS to style elements, bundle the **button.css** file with your application's CSS. Then apply the ``.vui-button`` and ``.vui-button-primary`` classes to your button elements.
 
 .. code-block:: html
 
@@ -65,7 +61,7 @@ your application's CSS. Then apply the ``.vui-button`` and ``.vui-button-primary
 *******************
 Buttons with Icons
 *******************
-To include an icon inside a button, add a ``<span>`` element inside the button and apply the appropriate Less mixin or CSS class for the icon.  For more information, see :doc:`Icons <../valence-ui-components/valence-ui-icons>`.
+To include an icon inside a button, add a ``<span>`` element inside the button and apply the appropriate mixin or CSS class for the icon.  For more information, see :doc:`Icons <../valence-ui-components/valence-ui-icons>`.
 
 .. role:: example
 
@@ -98,26 +94,24 @@ To include an icon inside a button, add a ``<span>`` element inside the button a
 
     Always provide text for buttons even if the button is simply an icon.  You can achieve this by providing off-screen text, which can be interpreted by assistive technologies. For more information, see :doc:`Off-screen <../valence-ui-components/valence-ui-offscreen>`.
 
-Less:
+Scss:
 
 .. code-block:: css
 
   .icon-bookmark,
-  .icon-edit,
-  {
-    #vui.Icon();
+  .icon-edit {
+    @include vui-icon;
   }
 
   .icon-bookmark {
-    #vui.Icon.actionBookmark();
+    @include vui-actionBookmark;
   }
 
   .icon-edit {
-    #vui.Icon.actionEdit();
+    @include vui-actionEdit;
   }
 
-
-HTML using Less:
+HTML using CSS generated from Sass:
 
 .. code-block:: html
 
