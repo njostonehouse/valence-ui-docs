@@ -71,9 +71,9 @@ List items can be in two different states (or a combination of both states), and
 
 - **active**: Clickable or selectable items are typically put into this state when the user's mouse hovers over them, or when they receive keyboard focus.
 
-To apply states to list items, call the list-item mixins as shown.
+To create styles for list item states, call the list-item mixins as shown, and apply class names to the items as needed.
 
-  .. role:: example
+.. role:: example
 
 :example:`Example`
 
@@ -82,13 +82,12 @@ To apply states to list items, call the list-item mixins as shown.
   <div class="vuiexamplebox vui-typography">
     <div class="vui-docs-example2">
       <ul id="liststates" class="vui-compact vui-no-separator">
-        <li class="vradio"><label><input type="radio" name="list_group_1" checked /> item 1</label></li>
+        <li class="vradio"><label><input name="list_group_1" type="radio" checked /> item 1</label></li>
         <li class="vradio"><label><input name="list_group_1" type="radio" /> item 2</label></li>
         <li class="vradio"><label><input name="list_group_1" type="radio" /> item 3</label></li>
       </ul>
     </div>
   </div>
-  <br>
 
 Scss:
 

@@ -8,7 +8,7 @@
 
 		$list.find( 'li.vradio > label > input' ).each(
 			function ( index, inputNode ) {
-				
+
 				var $input = $( inputNode );
 
 				$input.closest( 'li.vradio' ).toggleClass(
@@ -26,8 +26,8 @@
 
 		var $target = $( args.target );
 
-		 if ( $target.attr( 'type' ) === 'radio' ) {
-		 	
+		if ( $target.attr( 'type' ) === 'radio' ) {
+			console.log($target);
 			updateListSelection();
 		}
 
