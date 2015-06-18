@@ -50,6 +50,8 @@
     {%- endif %}
     </div>
 
+    <script type="text/javascript" src="_static/vui-list-states-example.js"></script>
+{% set script_files = script_files + ['http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', '_static/vui-list-states-example.js', '_static/valenceui.js'] %}
     <script>
         $(function () {
             $( '.vui-accordion' ).vui_accordion();
@@ -57,6 +59,35 @@
             $( '.input-tracking' ).vui_changeTracking();
             $( '.vui-heading-collapsible' ).vui_collapsibleSection();
         });
+        $(function() {
+            var $list = $('#liststates');
+
+            var updateListSelection = function() {
+
+                $list.find('li.vradio > label > input').each(
+                    function (index, inputNode) {
+                        var $input = $(inputNode);
+                        $input.closest('li.vradio').toggleClass(
+                            'selected', $input.prop('checked')
+                        );
+                    }
+                );
+
+            };
+
+            updateListSelection();
+
+            $list.change(function(args) {
+
+            var $target = $(args.target);
+
+            if ($target.attr('type') === 'radio') {
+                console.log($target);
+                updateListSelection();
+            }
+
+        });
+    })();
     </script>
 
 {% endmacro %}
