@@ -67,7 +67,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
       npm install vui-button
       npm install vui-input
       npm install vui-field
-      npm install vui-change-tracking-jquery
+      npm install jquery-vui-change-tracking
 
 2.  We'll style and customize our components by using Sass. So, we'll create a *myapp.scss* file that contains all the Sass goodness and then compile the file into a CSS file.
 
@@ -78,7 +78,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
       @import '<npm module path>/vui-field/field';
       @import '<npm module path>/vui-field/label';
       @import '<npm module path>/vui-input/input';
-      @import '<npm module path>/vui-change-tracking-jquery/changeTracking';
+      @import '<npm module path>/jquery-vui-change-tracking/changeTracking';
 
       body {
         @include vui-typography;
