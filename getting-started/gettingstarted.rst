@@ -20,9 +20,9 @@ Available components
 Check out the :doc:`Components <../valence-ui-components/index>` page for a list of available VUI components.
 
 ****************************
-Installing the components 
+Installing the components
 ****************************
-All of the VUI components are available as `npm modules <https://www.npmjs.org/browse/keyword/vui>`_, so you must have `Node.js <http://nodejs.org/>`_ installed.  
+All of the VUI components are available as `npm modules <https://www.npmjs.org/browse/keyword/vui>`_, so you must have `Node.js <http://nodejs.org/>`_ installed.
 
 To install a component, in your project directory, type the following command:
 
@@ -32,17 +32,17 @@ To install a component, in your project directory, type the following command:
 
 For example, to install the `vui-icons <https://www.npmjs.com/browse/keyword/vui>`_ library, type: ``npm install vui-icons``.
 
-Once installed, the VUI component is available in the ``node-modules`` directory of your project.  
+Once installed, the VUI component is available in the ``node-modules`` directory of your project.
 
 From there you can incorporate the component into your app.  Visit the :doc:`docs <../valence-ui-components/index>` to see how.
 
 ****************************
 Example
 ****************************
-Here's a simple example to get up and running with VUI. It's just a "Hello World" HTML page that displays a heading, an input field with a label, and a button. We'll include the change tracking component, which is a jQuery-based widget to track form element changes. 
+Here's a simple example to get up and running with VUI. It's just a "Hello World" HTML page that displays a heading, an input field with a label, and a button. We'll include the change tracking component, which is a jQuery-based widget to track form element changes.
 
 .. raw:: html
-    
+
     <div class="vuiexamplebox">
       <div class="vui-typography">
       <h2 class="docs vui-heading-2">Hello World</h2>
@@ -67,7 +67,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
       npm install vui-button
       npm install vui-input
       npm install vui-field
-      npm install vui-change-tracking-jquery
+      npm install jquery-vui-change-tracking
 
 2.  We'll style and customize our components by using Less. So, we'll create a *myapp.less* file that contains all the Less goodness and then compile the file into a CSS file.
 
@@ -78,7 +78,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
       @import '<npm module path>/vui-field/field';
       @import '<npm module path>/vui-field/label';
       @import '<npm module path>/vui-input/input';
-      @import '<npm module path>/vui-change-tracking-jquery/changeTracking';
+      @import '<npm module path>/jquery-vui-change-tracking/changeTracking';
 
       body {
         #vui.Typography();
@@ -112,7 +112,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
 
       <html lang="en">
         <head>
-          ...       
+          ...
           <link href="myapp.css" rel="stylesheet">
         </head>
         <body>
@@ -126,7 +126,7 @@ Here's a simple example to get up and running with VUI. It's just a "Hello World
                 <button class="primary">Hello</button>
               </div>
             </form>
-        
+
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
           <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
           <script src="node_modules/vui-change-tracking-jquery/changeTracking.js"></script>
