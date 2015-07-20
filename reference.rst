@@ -16,5 +16,6 @@
    valence-ui-components/valence-ui-link
    valence-ui-components/valence-ui-list
    valence-ui-components/valence-ui-offscreen
-   valence-ui-components/valence-ui-typography   
+   valence-ui-components/valence-ui-typography
    getting-started/gettingstarted
+   accessibility/accessibility
