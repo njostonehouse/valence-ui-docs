@@ -67,11 +67,12 @@ Four incremental heading styles can be applied to any ``<h1>``-``<h6>`` element 
 
 .. admonition::  Accessibility
 
-  Your page should always contain a single ``<h1>`` element.
+  Your page should always contain a single ``<h1>`` element, and heading levels should increase with your page's semantic structure, never skipping a level. For added semantic structure, use `WAI-ARIA landmark roles <http://www.w3.org/TR/wai-aria/roles#landmark_roles>`_ or HTML5 landmark elements to call out particular areas within your page, such as: main, search, navigation, etc.
 
-  Heading levels should increase with your page's semantic structure, never skipping a level.
+  For additional information:
 
-  For additional information, see `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_.
+  * `Techniques for WCAG 2.0: Organizing a page using headings <http://www.w3.org/TR/WCAG-TECHS/G141.html>`_
+  * `WebAIM: Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_
 
 Styling with Sass
 ==================
