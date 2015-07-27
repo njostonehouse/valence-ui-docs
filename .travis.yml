@@ -18,7 +18,7 @@ deploy:
     tags: true
     all_branches: true
 - provider: s3
-  access_key_id: "$aws_key_internal"
+  access_key_id: "AKIAJVDO2NQZ5NOFDA6Q"
   secret_access_key: "$aws_secret_internal"
   bucket: ui.edev.d2l.com
   local-dir: _build/html
@@ -34,6 +34,10 @@ env:
   - secure: WSpWNAwbZ3HPuZREn5Egb/Yu13hxfu1SOp/VrUMBuNgtfkoDaQh6XRvF5ADvkSGU7/QnC+5tLPOGPw8mJ0dmCxM9iZYZdHieKkd2qKy85dv0Bz8mjE4W3dvF+wNoQ0qZ39jSc3HJFvlD+5ZNrfgC+TZzHKWsryYQlOpK1F1WsCk=
   - secure: BERjsO7xiTaAUePUT7gimjhbdAYtzjYtYt5v0Xdd2WR8CLe7ilKcrEWo7hM+LP8eyxJzIBw5pxGLaX5/fKuxLd8ajOqH2QlyG5HcOs7PRNT2/ec2OiSzrhwyHSguLzdGMwmvlBXzxBK11WEiElGm49VxFSboypUX3FBaA9nwlLw=
   - secure: CNcUnekzWxw7ak+lBKVYQK9dgTjB+iTBAmLJ+j2W6s7lIA+/6U9NPn8YCkmib8Ma2+/JsZnNGlqgCRysuXKEI7//Dp3SNUqf7mIWfblcPyqIPKtUV9VpblRPL07Dl35dBlSDYZLjHdzc5YkJ/WRgaB1Y7WWKTqYouLoqVCFN074=
+  # GITHUB_TOKEN
   - secure: eGL/WhnF77rf0rp8g2kf6hSI1fras/gROlrnuKGgZN9sO9FO4kcuvbG5MZsnyz4CYeEFlTJ8pj5RkgokoBUwGxVAuoouUVGSVng/c+iGaDOZrEPEh7HD0K5xdodNj3330RRZi7zXyKX4stauD19x7TLipmB1trtuzWAHvJqrkMg=
+  # aws_secret_internal
+  - secure: GHXTbWPkSs+YSy9lsMPYrsqwkbPXnFT8t1a5FNz8gkFEoDnlIGYcH7xRYd4CM4HaSSyVzIz40ft4Tdba/IIBFTJw9zypw5xQlcBwIjPaDO4A/dNvbiJqKqYSZUGRvFS55yJJnipfQ9V5lTDRmrdchXDQU5IOHZ7to4M8r64D2s4=
+
 after_success:
 - python sendComment.py "Published to http://ui.edev.d2l.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
