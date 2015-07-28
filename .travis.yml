@@ -36,5 +36,5 @@ env:
   # aws_secret_prod
   - secure: fdHbL3kTf9E510NyfPQElhzdbjTpQMWldwgegcG/5Zr0EVV352YFWxuC3/q3Ct/RmCs2jqQR0w6qQ745LPz74Tm76JUoXUSb0mrB4rFAeWo1PJGxA9Tivmf0Gpt9OP/k+VwFCLjzEylkHoFJ6G9DmjtmL4vyxv5nEuxtw+D7xWk=
 
-after_success:
+after_deploy:
 - python sendComment.py "Published to http://ui.edev.d2l.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
