@@ -9,7 +9,7 @@ install:
 script: npm run build
 deploy:
 - provider: s3
-  access_key_id: "$aws_key_prod"
+  access_key_id: "AKIAJVDO2NQZ5NOFDA6Q"
   secret_access_key: "$aws_secret_prod"
   bucket: ui.valence.d2l.com
   local-dir: _build/html
@@ -29,15 +29,12 @@ deploy:
     all_branches: true
 env:
   global:
-  - secure: ND6UvnWu7Fxmt0qjJyi1rMnb1YiulmV7g+fIK8q/t0Ah9NuKwf8rpSfq5o6NtekJpGkDUbiKXQgQTXLlE0SPGUfn0C17hRqEHao1pAVOHnKj/vd8hIa/IxGVEarjW3ccvTZZMuZjNHPYbmAmnnd/PXgKnIF1CwwDcHrFpjPraA0=
-  - secure: GkKxfN1cc9UN4w/QNR6jJec3pB7mnIWH9oH/8PpRUI8lcOlAVbx9Nbfbkt8mdCoCJOMGsIwUz3aZgXeAglCMaWSBsIeVl6jsJJQK3sMz9ksTRcW9dr2bY7/wZyWWfGFfaw5M0vXE25jDWvFydVvIG5HkZRe+j8ixciffIPO9MLo=
-  - secure: WSpWNAwbZ3HPuZREn5Egb/Yu13hxfu1SOp/VrUMBuNgtfkoDaQh6XRvF5ADvkSGU7/QnC+5tLPOGPw8mJ0dmCxM9iZYZdHieKkd2qKy85dv0Bz8mjE4W3dvF+wNoQ0qZ39jSc3HJFvlD+5ZNrfgC+TZzHKWsryYQlOpK1F1WsCk=
-  - secure: BERjsO7xiTaAUePUT7gimjhbdAYtzjYtYt5v0Xdd2WR8CLe7ilKcrEWo7hM+LP8eyxJzIBw5pxGLaX5/fKuxLd8ajOqH2QlyG5HcOs7PRNT2/ec2OiSzrhwyHSguLzdGMwmvlBXzxBK11WEiElGm49VxFSboypUX3FBaA9nwlLw=
-  - secure: CNcUnekzWxw7ak+lBKVYQK9dgTjB+iTBAmLJ+j2W6s7lIA+/6U9NPn8YCkmib8Ma2+/JsZnNGlqgCRysuXKEI7//Dp3SNUqf7mIWfblcPyqIPKtUV9VpblRPL07Dl35dBlSDYZLjHdzc5YkJ/WRgaB1Y7WWKTqYouLoqVCFN074=
   # GITHUB_TOKEN
   - secure: eGL/WhnF77rf0rp8g2kf6hSI1fras/gROlrnuKGgZN9sO9FO4kcuvbG5MZsnyz4CYeEFlTJ8pj5RkgokoBUwGxVAuoouUVGSVng/c+iGaDOZrEPEh7HD0K5xdodNj3330RRZi7zXyKX4stauD19x7TLipmB1trtuzWAHvJqrkMg=
   # aws_secret_internal
   - secure: GHXTbWPkSs+YSy9lsMPYrsqwkbPXnFT8t1a5FNz8gkFEoDnlIGYcH7xRYd4CM4HaSSyVzIz40ft4Tdba/IIBFTJw9zypw5xQlcBwIjPaDO4A/dNvbiJqKqYSZUGRvFS55yJJnipfQ9V5lTDRmrdchXDQU5IOHZ7to4M8r64D2s4=
+  # aws_secret_prod
+  - secure: fdHbL3kTf9E510NyfPQElhzdbjTpQMWldwgegcG/5Zr0EVV352YFWxuC3/q3Ct/RmCs2jqQR0w6qQ745LPz74Tm76JUoXUSb0mrB4rFAeWo1PJGxA9Tivmf0Gpt9OP/k+VwFCLjzEylkHoFJ6G9DmjtmL4vyxv5nEuxtw+D7xWk=
 
 after_success:
 - python sendComment.py "Published to http://ui.edev.d2l.com/${TRAVIS_BUILD_NUMBER}_${TRAVIS_COMMIT}";
