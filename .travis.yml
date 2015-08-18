@@ -3,3 +3,17 @@ rvm:
 - 2.1
 install: gem install jekyll
 script: jekyll build
+deploy:
+- provider: s3
+  access_key_id: AKIAI53JGZFCAU3WTR6A
+  secret_access_key: "$aws_secret_prod"
+  bucket: design.d2l
+  local-dir: _site
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+env:
+  global:
+    # aws_secret_prod
+    - secure: u252A+eCXXRl25MbXitIiI8w5zjtB3lZeTwa81tvpu5aPSZ7mqVf/GcHHcmzqFqs8RbMUaAJX//nj5Mwfzfi9/AEtSXKADJoQAaMVQvJbzj88D4VEK2OmZ+jjJqNASqJe6A4hssB3DHsTpMY/p8ACSyw3zhS1Z5IHsocz8eUaAZWrB6uifZSOvgixzd/Mun8VmvhP2slJoL3encZyD01QZIr4YZCbiMI/RluzFFQuNwhdOdWAzHatCiGBogodZcY/9ZeOTNPK0T7tOupk1AuX9NyZSroahbeM0LIVhH4MzfshPc+USy6A3Dv6Fn6V+ANDl48GV8ihiAkuTm7w2McOdrKkj6lQArMPwHYSTtbgY+yLDtGmgDCpYrVj3nRaiRilqWY2cHaPfQa1v9NoQm2CHM3TK/Eb0F3w2Pk1hgOGc8mysvxID4DCufZ1RGgKX5m8ANbA2XIItTYxVXCVpgLy/xClD69Vc6vEoaKlYD5ZO5LxbNGFswA440XJP9zZ/E0up7hlygqf0k6SkLRVkiY0J4qbk7zpDrfuk8UEumebcAoiGreRhxmvoXozBNBsMAVsyUgjgMp36uPTTOQHf1Flw6M4ZEnjuX396mSF7cbhc2J3dfjYQf52LXtG5mahc7DhDX5KL6fVI4nwOSIa2MC8PvLTp3+l64JQV61DW3rGng=
