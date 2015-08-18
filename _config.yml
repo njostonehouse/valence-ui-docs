@@ -11,9 +11,9 @@ exclude: [README.md]
 collections:
   components:
     output: true
-
-# Build settings
 markdown: kramdown
 kramdown:
   coderay_line_numbers: nil
   input: GFM
+sass:
+  style: :compressed
