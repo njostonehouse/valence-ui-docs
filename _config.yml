@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ui.valence.d2l.com" # the base hostname & protocol for your site
 exclude: [README.md]
+highlighter: pygments
 defaults:
   -
     values:
@@ -15,9 +16,5 @@ defaults:
 collections:
   components:
     output: true
-markdown: kramdown
-kramdown:
-  coderay_line_numbers: nil
-  input: GFM
 sass:
   style: :compressed

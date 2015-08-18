@@ -14,28 +14,28 @@ If you're familiar with [Sass](http://sass-lang.com/), you can use our mixins to
 
 Scss:
 
-```css
+{% highlight css %}
 @import '<npm module path>/vui-offscreen/offscreen';
 
 .offscreen {
 	@include vui-offscreen;
 }
-```
+{% endhighlight %}
 
 HTML:
 
-```html
+{% highlight html %}
 <p class="offscreen">
 	This text will only be visible to screen readers.
 </p>
-```
+{% endhighlight %}
 
 ## Styling with CSS
 
 If you'd prefer to use CSS to style lists, bundle the provided **offscreen.css** file with your application's CSS. Then apply the `.vui-offscreen` class to your element.
 
-```html
+{% highlight html %}
 <p class="vui-offscreen">
 	This text will only be visible to screen readers.
 </p>
-```
+{% endhighlight %}

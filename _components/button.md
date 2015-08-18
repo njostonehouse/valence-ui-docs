@@ -20,7 +20,7 @@ If you're familiar with [Sass](http://sass-lang.com/), you can use our mixins to
 
 Scss:
 
-```css
+{% highlight css %}
 @import '<npm module path>/vui-button/button';
 
 button, input[type=button] {
@@ -30,27 +30,27 @@ button, input[type=button] {
 button.primary {
 	@include vui-button-primary;
 }
-```
+{% endhighlight %}
 
 HTML:
 
-```html
+{% highlight html %}
 <button class="primary">Button 1</button>
 <button>Button 2</button>
 <input type="button" value="Button 3" />
 <button disabled="disabled">Button 4</button>
-```
+{% endhighlight %}
 
 ## Styling with CSS
 
 If you prefer to use CSS to style elements, bundle the `button.css` file with your application's CSS. Then apply the `.vui-button` and `.vui-button-primary` classes to your button elements.
 
-```html
+{% highlight html %}
 <button class="vui-button vui-primary">Button 1</button>
 <button class="vui-button">Button 2</button>
 <input class="vui-button" type="button" value="Button 3" />
 <button class="vui-button" disabled="disabled">Button 4</button>
-```
+{% endhighlight %}
 
 ## Buttons with Icons
 
@@ -83,7 +83,7 @@ Always provide text for buttons even if the button is simply an icon.  You can a
 
 Scss:
 
-```css
+{% highlight css %}
 .icon-bookmark,
 .icon-edit {
 	@include vui-icon;
@@ -96,11 +96,11 @@ Scss:
 .icon-edit {
 	@include vui-actionEdit;
 }
-```
+{% endhighlight %}
 
 HTML using CSS generated from Sass:
 
-```html
+{% highlight html %}
 <button>
 	<span class="icon-bookmark"></span>
 	<span class="offscreen">Bookmark</span>
@@ -109,11 +109,11 @@ HTML using CSS generated from Sass:
 	<span class="icon-edit"></span>
 	Edit
 </button>
-```
+{% endhighlight %}
 
 HTML using plain CSS:
 
-```html
+{% highlight html %}
 <button class="vui-button">
 	<span class="vui-icon-bookmark"></span>
 	<span class="vui-offscreen">Bookmark</span>
@@ -122,4 +122,4 @@ HTML using plain CSS:
 	<span class="vui-icon-edit"></span>
 	Edit
 </button>
-```
+{% endhighlight %}

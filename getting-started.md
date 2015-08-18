@@ -24,9 +24,9 @@ All of the VUI components are available as [npm modules](https://www.npmjs.org/b
 
 To install a component, in your project directory, type the following command:
 
-```shell
+{% highlight bash %}
 npm install vui-{component-name}
-```
+{% endhighlight %}
 
 For example, to install the [vui-icons](https://www.npmjs.com/browse/keyword/vui) library, type: `npm install vui-icons`.
 

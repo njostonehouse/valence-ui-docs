@@ -11,20 +11,20 @@ As you browse the VUI component documentation, you'll find a lot of inline acces
 
 Each page must include a unique, descriptive and relevant title using the `<title>` element.
 
-```html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 <head>
   <title>Unique, descriptive page title</title>
 </head>
 </html>
-```
+{% endhighlight %}
 
 For [single-page applications](https://en.wikipedia.org/wiki/Single-page_application), make sure the title is kept up-to-date with changes to the primary content by setting `document.title` via JavaScript:
 
-```javascript
+{% highlight javascript %}
   document.title = 'my new page title';
-```
+{% endhighlight %}
 
 ### WCAG 2.0 Success Criterion 2.4.2 (Level A):
 
