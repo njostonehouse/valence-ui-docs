@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Welcome to Valence UI
 exclude_nav: true
 ---
