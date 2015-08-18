@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
+title: Welcome to Valence UI
+exclude_nav: true
 ---
-# Welcome to Valence UI
 
 Valence UI (also known as "VUI") is a set of libraries that you can use to create and style UI components for your app so that you get the same look and behavior as native D2L applications.
 
