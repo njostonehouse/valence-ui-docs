@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Off-screen
 description: Styles for making information “visible” to screen reader users but hidden from sighted users.
 permalink: /:path/offscreen/

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Button
 description: Styles for primary and default buttons, as well as buttons with icons.
 ---
