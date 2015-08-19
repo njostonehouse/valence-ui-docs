@@ -1,8 +1,11 @@
 language: ruby
 rvm:
 - 2.1
-install: gem install jekyll
-script: jekyll build
+install: gem install jekyll html-proofer
+script: jekyll build && htmlproof ./_site
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 deploy:
   provider: s3
   access_key_id: AKIAI53JGZFCAU3WTR6A
