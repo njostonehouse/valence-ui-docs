@@ -1,7 +1,6 @@
 ---
 title: Off-screen
 description: Styles for making information “visible” to screen reader users but hidden from sighted users.
-permalink: /:path/offscreen/
 ---
 
 The [vui-offscreen](https://github.com/Brightspace/valence-ui-offscreen) library provides mixins and CSS for positioning elements off the screen.

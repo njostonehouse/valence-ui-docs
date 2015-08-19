@@ -54,7 +54,7 @@ If you prefer to use CSS to style elements, bundle the `button.css` file with yo
 
 ## Buttons with Icons
 
-To include an icon inside a button, add a `<span>` element inside the button and apply the appropriate mixin or CSS class for the icon.  For more information, see [Icons](/components/icons/).
+To include an icon inside a button, add a `<span>` element inside the button and apply the appropriate mixin or CSS class for the icon.  For more information, see Icons.
 
 <div class="vuiexamplebox vui-typography">
 	<div class="vui-field-row">
@@ -79,7 +79,7 @@ To include an icon inside a button, add a `<span>` element inside the button and
 
 ### Accessibility
 
-Always provide text for buttons even if the button is simply an icon.  You can achieve this by providing off-screen text, which can be interpreted by assistive technologies. For more information, see [Off-screen](/components/offscreen/).
+Always provide text for buttons even if the button is simply an icon.  You can achieve this by providing off-screen text, which can be interpreted by assistive technologies. For more information, see [Off-screen](/components/offscreen.html).
 
 Scss:
 
