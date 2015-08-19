@@ -53,4 +53,4 @@ Deployment does not happen on every commit, but only on **tagged commits**. The 
 When naming releases, it's best to use a [semantic version](http://semver.org/) number that best describes the type of changes that have occurred since the previous release.
 
 [ci-url]: https://travis-ci.org/dlockhart/jekyll-playground
-[ci-image]: https://img.shields.io/travis/dlockhart/jekyll-playground.svg
+[ci-image]: https://travis-ci.org/dlockhart/jekyll-playground.svg?branch=master
