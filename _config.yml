@@ -3,7 +3,7 @@ title: Valence UI
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ui.valence.d2l.com" # the base hostname & protocol for your site
 exclude: [README.md, vendor]
-highlighter: pygments
+highlighter: rouge
 defaults:
   -
     values:
