@@ -7,10 +7,10 @@ Valence UI (also known as "VUI") is a set of libraries that you can use to creat
 
 ## Where do I get VUI?
 
-The VUI components are available as [NPM modules](https://www.npmjs.org/browse/keyword/vui), so you'll need [Node.js](http://nodejs.org/) to install the components. To learn more, see [Getting Started](/getting-started/).
+The VUI components are available as [NPM modules](https://www.npmjs.org/browse/keyword/vui), so you'll need [Node.js](http://nodejs.org/) to install the components. To learn more, see [Getting Started]({{ '/getting-started' | prepend: site.baseurl | prepend: site.github.url }}).
 
 ## What's available in VUI?
-To see what's available, visit [Components](/components/).
+To see what's available, visit [Components]({{ '/components' | prepend: site.baseurl | prepend: site.github.url }}).
 
 ## What's changed in VUI?
 

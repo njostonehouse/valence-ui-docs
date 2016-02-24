@@ -16,7 +16,7 @@ You can style VUI components by just using plain CSS. For components that includ
 If you'd rather use [Sass](http://sass-lang.com/) to style and customize your app, most VUI components include Sass mixins (Scss syntax) that you can import into your own Sass files.
 
 ## Available components
-Check out the [Components](/components/] page for a list of available VUI components.
+Check out the [Components]({{ '/components' | prepend: site.baseurl | prepend: site.github.url }}) page for a list of available VUI components.
 
 ## Installing the components
 
@@ -32,4 +32,4 @@ For example, to install the [vui-icons](https://www.npmjs.com/browse/keyword/vui
 
 Once installed, the VUI component is available in the `node-modules` directory of your project.
 
-From there you can incorporate the component into your app.  Visit the [docs](/components/) to see how.
+From there you can incorporate the component into your app.  Visit the [docs]({{ '/components' | prepend: site.baseurl | prepend: site.github.url }}) to see how.
