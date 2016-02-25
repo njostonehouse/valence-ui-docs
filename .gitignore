@@ -1,3 +1,5 @@
 _site
 .idea
 .sass-cache
+css/valenceui.css
+node_modules
