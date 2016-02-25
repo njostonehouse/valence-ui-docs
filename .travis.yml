@@ -2,12 +2,11 @@ language: ruby
 rvm:
 - 2.1
 install:
-  - gem install jekyll html-proofer pygments.rb
+  - gem install jekyll pygments.rb
   - npm install
 script:
   - npm run build
   - jekyll build
-  - htmlproof ./_site --href-ignore www.w3.org
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
