@@ -1,6 +1,6 @@
-language: ruby
-rvm:
-- 2.1
+language: node_js
+node_js:
+- 5.6
 install:
   - gem install jekyll pygments.rb
   - npm install
