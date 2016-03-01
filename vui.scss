@@ -16,3 +16,142 @@
 @import "node_modules/vui-offscreen/offscreen.scss";
 @import "node_modules/vui-table/table.scss";
 @import "node_modules/vui-typography/typography.scss";
+
+/* actions and navigation */
+.vui-breadcrumbs {
+	@include vui-breadcrumbs();
+}
+
+.vui-button {
+	@include vui-button();
+}
+
+.vui-button-primary {
+	@include vui-button-primary();
+}
+
+.vui-image-action {
+	@include vui-image-action();
+}
+
+.vui-link {
+	@include vui-link();
+}
+
+/* Accessibility */
+.vui-focus-on {
+	@include vui-focus-outline();
+}
+
+/* Appearance */
+.vui-typography {
+	@include vui-typography();
+}
+
+.vui-h1 {
+	@include vui-typography-heading1()
+}
+
+.vui-h2 {
+	@include vui-typography-heading2()
+}
+
+.vui-h3 {
+	@include vui-typography-heading3()
+}
+
+.vui-h4 {
+	@include vui-typography-heading4()
+}
+
+.vui-icon-delete {
+	@include vui-icon();
+	@include vui-icon-action-delete();
+}
+
+.vui-icon-download {
+	@include vui-icon();
+	@include vui-icon-action-download();
+}
+
+.vui-icon-link {
+	@include vui-icon();
+	@include vui-icon-action-link();
+}
+
+.vui-icon-print {
+	@include vui-icon();
+	@include vui-icon-action-print();
+}
+
+.vui-icon-share {
+	@include vui-icon();
+	@include vui-icon-action-share();
+}
+
+.vui-icon-sliders {
+	@include vui-icon();
+	@include vui-icon-action-sliders();
+}
+
+.vui-icon-subscribe {
+	@include vui-icon();
+	@include vui-icon-action-subscribe();
+}
+
+.vui-icon-tag {
+	@include vui-icon();
+	@include vui-icon-action-tag();
+}
+
+.vui-icon-upload {
+	@include vui-icon();
+	@include vui-icon-action-upload();
+}
+
+/* Data */
+.vui-table {
+	@include vui-table();
+}
+
+.vui-list {
+	@include vui-list()
+}
+
+/* Errors */
+.vui-error {
+	@include vui-alerts-error();
+}
+
+/* Forms */
+.vui-input-text {
+	@include vui-input();
+}
+
+.vui-input-checkbox {
+	@include vui-input-checkbox();
+}
+
+.vui-input-checkbox-label {
+	@include vui-input-checkbox-label();
+}
+
+.vui-input-radio {
+	@include vui-input-radio();
+}
+
+.vui-input-radio {
+	@include vui-input-radio-label();
+}
+
+.vui-input-select {
+	@include vui-input-select();
+}
+
+.vui-input-textarea {
+	@include vui-input-textarea();
+}
+
+.vui-field-label {
+	@include vui-field-label();
+}
