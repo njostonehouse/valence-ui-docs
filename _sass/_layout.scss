@@ -2,18 +2,15 @@
 	padding: $spacing-unit 0;
 }
 
-.page-heading {
-	font-size: 20px;
+.component-groups > .component-group-description {
+	font-size: .7rem;
 }
 
 .component-list {
-	list-style: none;
 	margin-left: 0;
 }
+
 .component-list > li {
-	border-bottom: 1px solid $grey-color-light;
-	padding: $spacing-unit/2 0;
-}
-.component-list > li:last-child {
-	border-bottom: none;
+	display: inline-block;
+	padding-right: 1rem;
 }
