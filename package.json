@@ -1,6 +1,6 @@
 {
 	"name": "vui-docs",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "Documentation for the Valence User Interface (VUI) collection of components",
 	"main": "index.js",
 	"scripts": {
