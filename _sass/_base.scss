@@ -8,17 +8,17 @@ dl, dd, ol, ul, figure {
 	padding: 0;
 }
 
-
+:root {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $text-color;
+}
 
 /**
  * Basic styling
  */
 body {
-	font-family: $base-font-family;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	font-weight: 300;
-	color: $text-color;
 	background-color: $background-color;
 	-webkit-text-size-adjust: 100%;
 }

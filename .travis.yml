@@ -1,12 +1,13 @@
-language: ruby
-rvm:
-- 2.1
+language: node_js
+node_js:
+- 5.6
+before_install:
+  - rvm install 2.2.2
 install:
   - gem install jekyll pygments.rb
   - npm install
 script:
   - npm run build
-  - jekyll build
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer

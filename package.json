@@ -4,9 +4,10 @@
 	"description": "Documentation for the Valence User Interface (VUI) collection of components",
 	"main": "index.js",
 	"scripts": {
-		"prebuild": "rimraf ./css/valenceui.css",
-		"build:vui:css": "concat ./node_modules/vui-breadcrumbs/breadcrumbs.css ./node_modules/vui-button/button.css ./node_modules/vui-field/field.css ./node_modules/vui-focus/focus.css ./node_modules/vui-icons/icons.css ./node_modules/vui-input/input.css ./node_modules/vui-link/link.css ./node_modules/vui-list/list.css ./node_modules/vui-offscreen/offscreen.css ./node_modules/vui-typography/typography.css -o ./css/valenceui.css",
-		"build": "npm run build:vui:css"
+		"prebuild": "rimraf ./_sass/_vui.scss",
+		"build:css": "node-sass --importer ./node_modules/frau-sass-importer/ ./vui.scss > ./_sass/_vui.scss",
+		"build:site": "jekyll build",
+		"build": "npm run build:css && npm run build:site"
 	},
 	"repository": {
 		"type": "git",
@@ -20,18 +21,23 @@
 	"homepage": "https://github.com/Brightspace/valence-ui-docs",
 	"private": true,
 	"devDependencies": {
-		"concat-bin": "^1.0.1",
+		"frau-sass-importer": "^0.3.0",
+		"node-sass": "^3.4.2",
 		"rimraf": "^2.2.8",
-		"vui-breadcrumbs": "^0.6.0",
-		"vui-button": "^0.7.0",
-		"vui-field": "^0.6.0",
-		"vui-focus": "^0.7.0",
-		"vui-icons": "^0.5.0",
-		"vui-input": "^0.6.0",
-		"vui-link": "^0.6.0",
-		"vui-list": "^0.4.0",
-		"vui-offscreen": "^0.2.0",
-		"vui-typography": "^0.5.0"
+		"vui-alerts": "^0.1.2",
+		"vui-breadcrumbs": "^2.0.0",
+		"vui-button": "^1.2.1",
+		"vui-field": "^1.0.0",
+		"vui-focus": "^0.7.1",
+		"vui-grid-system": "0.0.1",
+		"vui-icons": "^1.1.1",
+		"vui-image-action": "^0.2.1",
+		"vui-input": "^1.5.5",
+		"vui-link": "^1.1.1",
+		"vui-list": "^1.0.0",
+		"vui-offscreen": "^0.3.0",
+		"vui-table": "0.0.9",
+		"vui-typography": "^2.0.2"
 	},
 	"keywords": [
 		"d2l",
