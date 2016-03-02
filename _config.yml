@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ui.valence.d2l.com" # the base hostname & protocol for your site
-exclude: [node_modules]
+exclude: [node_modules, package.json]
 highlighter: pygments
 defaults:
   -
@@ -15,6 +15,8 @@ defaults:
       layout: "page"
 collections:
   components:
+    output: true
+  componentgroups:
     output: true
 sass:
   style: :compressed

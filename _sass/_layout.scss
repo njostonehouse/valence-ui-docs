@@ -2,15 +2,17 @@
 	padding: $spacing-unit 0;
 }
 
-.component-groups > .component-group-description {
-	font-size: .7rem;
-}
-
-.component-list {
-	margin-left: 0;
-}
-
-.component-list > li {
+.component-groups > .component-group-items {
 	display: inline-block;
-	padding-right: 1rem;
+	margin-top: 1rem;
+}
+
+.component-group-item {
+	margin-bottom: 1rem;
+	width: 600px;
+}
+
+.component-group-item-title {
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
