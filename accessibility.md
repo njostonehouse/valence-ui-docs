@@ -35,7 +35,7 @@ For [single-page applications](https://en.wikipedia.org/wiki/Single-page_applica
 
 All non-text content (images, charts, audio, video, etc.) must be accompanied by a text alternative. For images, use the `“alt”` attribute or set `alt=“”` for decorative images. For other types of media, alternative formats may include: transcripts for audio, descriptive audio for video.
 
-## WCAG 2.0 Success Criterion 1.1.1 (Level A):
+### WCAG 2.0 Success Criterion 1.1.1 (Level A):
 
 * [Understanding SC 1.1.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [WebAIM: Alternate Text](http://webaim.org/techniques/alttext/)
@@ -46,11 +46,11 @@ All page elements must be accessible using the keyboard in a logical and intuiti
 
 ### WCAG 2.0 Success Criterion 2.1.1 (Level A):
 
-* [Understanding SC 2.1.1] (http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html)
+* [Understanding SC 2.1.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html)
 * [Techniques for using both keyboard and other device-specific functions](http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/SCR20)
 * [WebAIM: Keyboard Accessibility](http://webaim.org/techniques/keyboard/)
 
-### Color Contrast
+## Color Contrast
 
 Elements in your interface should have sufficient color contrast. To meet WCAG 2.0 Level AA, text should have a contrast ratio of at least 4.5:1 with its background. Larger text should have a ratio of 3:1.
 
@@ -64,7 +64,7 @@ Color should also never be used on its own to convey meaning or information.
 
 ### WCAG 2.0 Success Criterion 1.4.1 (Level A):
 
-[Understanding SC 1.4.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
+* [Understanding SC 1.4.1](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
 
 ## Further Reading and Resources
 

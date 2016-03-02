@@ -13,9 +13,19 @@
 @import "node_modules/vui-input/textarea.scss";
 @import "node_modules/vui-link/link.scss";
 @import "node_modules/vui-list/list.scss";
+@import "node_modules/vui-list/list-item.scss";
 @import "node_modules/vui-offscreen/offscreen.scss";
 @import "node_modules/vui-table/table.scss";
 @import "node_modules/vui-typography/typography.scss";
+
+/* global styles */
+body {
+	@include vui-typography();
+}
+
+a {
+	@include vui-link();
+}
 
 /* actions and navigation */
 .vui-breadcrumbs {
@@ -30,12 +40,21 @@
 	@include vui-button-primary();
 }
 
+.vui-link-main {
+	@include vui-link-main();
+}
+
 .vui-image-action {
 	@include vui-image-action();
 }
 
-.vui-link {
+.github-image-action > span {
 	@include vui-link();
+	font-size: 1rem;
+}
+
+.vui-image-action-list {
+	@include vui-image-action-list();
 }
 
 /* Accessibility */
@@ -43,25 +62,15 @@
 	@include vui-focus-outline();
 }
 
+.vui-offscreen {
+	@include vui-offscreen();
+}
+
 /* Appearance */
-.vui-typography {
-	@include vui-typography();
-}
-
-.vui-h1 {
-	@include vui-typography-heading1()
-}
-
-.vui-h2 {
-	@include vui-typography-heading2()
-}
-
-.vui-h3 {
-	@include vui-typography-heading3()
-}
-
-.vui-h4 {
-	@include vui-typography-heading4()
+.vui-grid-system {
+	height: 2rem;
+	width: 100%;
+	@include vui-gs-container();
 }
 
 .vui-icon-delete {
@@ -109,13 +118,66 @@
 	@include vui-icon-action-upload();
 }
 
+.vui-colour {
+	display: inline-block;
+	height: 1rem;
+	margin: .5rem;
+	width: 1rem;
+}
+
+.vui-colour-carnelian {
+	background-color: $vui-color-carnelian;
+}
+
+.vui-colour-celestine {
+	background-color: $vui-color-celestine;
+}
+
+.vui-colour-azurite {
+	background-color: $vui-color-azurite;
+}
+
+.vui-colour-celestuba {
+	background-color: $vui-color-celestuba;
+}
+
+.vui-colour-cinnabar {
+	background-color: $vui-color-cinnabar;
+}
+
+.vui-colour-citrine {
+	background-color: $vui-color-citrine;
+}
+
+.vui-colour-olivine {
+	background-color: $vui-color-olivine;
+}
+
+.vui-colour-zircon {
+	background-color: $vui-color-zircon;
+}
+
 /* Data */
 .vui-table {
 	@include vui-table();
 }
 
 .vui-list {
-	@include vui-list()
+	display: inline-block;
+	vertical-align: middle;
+	@include vui-list();
+}
+
+.vui-list-compact {
+	@include vui-list-compact();
+}
+
+.vui-list-no-separator {
+	@include vui-list-no-separator();
+}
+
+.vui-list-item-selected {
+	@include vui-list-item-selected();
 }
 
 /* Errors */
@@ -154,4 +216,17 @@
 
 .vui-field-label {
 	@include vui-field-label();
+}
+
+.vui-field-label-inline {
+	@include vui-field-label($inline: true);
+}
+
+.vui-field-label-required {
+	@include vui-field-label();
+	@include vui-field-label-required();
+}
+
+.vui-field-row {
+	@include vui-field-row();
 }
