@@ -48,9 +48,14 @@ a {
 	@include vui-image-action();
 }
 
+.github-image-action > img {
+	height: 18px;
+	width: 18px;
+}
+
 .github-image-action > span {
 	@include vui-link();
-	font-size: 1rem;
+	font-size: .7rem;
 }
 
 .vui-image-action-list {
@@ -67,6 +72,34 @@ a {
 }
 
 /* Appearance */
+.vui-small-text {
+	@include vui-typography-small-text();
+}
+
+.vui-h1 {
+	@include vui-typography-heading1();
+	display:inline-block;
+	padding-right: 1rem;
+}
+
+.vui-h2 {
+	@include vui-typography-heading2();
+	display:inline-block;
+	padding-right: 1rem;
+}
+
+.vui-h3 {
+	@include vui-typography-heading3();
+	display:inline-block;
+	padding-right: 1rem;
+}
+
+.vui-h4 {
+	@include vui-typography-heading4();
+	display:inline-block;
+	padding-right: 1rem;
+}
+
 .vui-grid-system {
 	height: 2rem;
 	width: 100%;
@@ -166,6 +199,7 @@ a {
 	display: inline-block;
 	vertical-align: middle;
 	@include vui-list();
+	margin: 0;
 }
 
 .vui-list-compact {

@@ -1,10 +1,11 @@
 ---
 title: Lists
 description: A set of items displayed sequentially.
-github_url: valence-ui-list#vui-list
+project: valence-ui-list
+package: vui-list
 ---
 
-<div style="display:inline-block;">
+<div>
 	<ol class="vui-list">
 		<li>Gold</li>
 		<li>Silver</li>

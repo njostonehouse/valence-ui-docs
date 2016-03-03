@@ -1,9 +1,10 @@
 ---
 title: Tables
 description: A collection of data organized in rows and columns.
-github_url: valence-ui-table#vui-table
+project: valence-ui-table
+package : vui-table
 ---
-<div style="display:inline-block;">
+<div>
 	<table class="vui-table">
 		<thead>
 		<tr>

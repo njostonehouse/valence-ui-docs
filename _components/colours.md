@@ -1,10 +1,10 @@
 ---
 title: Colours
 description: Defines a colour palette for use throughout the site.
-github_url: valence-ui-colors#vui-colors
+project: valence-ui-colors
+package: vui-colors
 ---
-
-<p>
+<div>
 	<div class="vui-colour vui-colour-carnelian"></div>
 	<div class="vui-colour vui-colour-celestine"></div>
 
@@ -14,4 +14,4 @@ github_url: valence-ui-colors#vui-colors
 	<div class="vui-colour vui-colour-citrine"></div>
 	<div class="vui-colour vui-colour-olivine"></div>
 	<div class="vui-colour vui-colour-zircon"></div>
-</p>
+</div>

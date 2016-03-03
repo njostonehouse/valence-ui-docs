@@ -1,9 +1,10 @@
 ---
 title: Image Actions
 description: A link with an associated image that performs an action when clicked.
-github_url: valence-ui-image-action#vui-image-action
+project: valence-ui-image-action
+package: vui-image-action
 ---
-<p>
+<div>
 	<ul class="vui-image-action-list" style="margin:0;">
 		<li>
 			<a href="#" class="vui-image-action">
@@ -16,4 +17,4 @@ github_url: valence-ui-image-action#vui-image-action
 			</a>
 		</li>
 	</ul>
-</p>
+</div>
