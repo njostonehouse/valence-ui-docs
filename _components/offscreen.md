@@ -1,7 +1,8 @@
 ---
 title: Offscreen
 description: Information “visible” to screen reader users but hidden from sighted users.
-github_url: valence-ui-offscreen#vui-offscreen
+project: valence-ui-offscreen
+package: vui-offscreen
 ---
 
-<span class="vui-offscreen">Offscreen</span>
+<span class="vui-offscreen">Why hello there</span>

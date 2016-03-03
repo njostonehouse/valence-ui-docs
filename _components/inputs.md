@@ -1,9 +1,10 @@
 ---
 title: Inputs
 description: Components that take input from the user for submission into a form.
-github_url: valence-ui-input#vui-input
+project: valence-ui-input
+package: vui-input
 ---
-<p>
+<div>
 	<div class="vui-field-row">
 		<input type="text" class="vui-input-text" placeholder="Text Field" />
 	</div>
@@ -27,4 +28,4 @@ github_url: valence-ui-input#vui-input
 			<option>Option B</option>
 		</select>
 	</div>
-</p>
+</div>

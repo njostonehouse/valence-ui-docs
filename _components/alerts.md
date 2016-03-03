@@ -1,6 +1,7 @@
 ---
 title: Alerts
 description: Alerts displayed to catch the attention of the current user.
-github_url: valence-ui-alerts#vui-alerts
+project: valence-ui-alerts
+package: vui-alerts
 ---
-<span class="vui-error">Error Alert!</span>
+<div class="vui-error">Error Alert!</div>

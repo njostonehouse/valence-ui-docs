@@ -1,12 +1,13 @@
 ---
 title: Typography
 description: Defines the appearance of text throughout the site.
-github_url: valence-ui-typography#vui-typography
+project: valence-ui-typography
+package: vui-typography
 ---
-<p>
-	<h1 style="display:inline-block; padding-right: 1rem;">Heading</h1>
-	<h2 style="display:inline-block; padding-right: 1rem;">Heading</h2>
-	<h3 style="display:inline-block; padding-right: 1rem;">Heading</h3>
-	<h4 style="display:inline-block; padding-right: 1rem;">Heading</h4>
+<div>
+	<div class="vui-h1">Heading</div>
+	<div class="vui-h2">Heading</div>
+	<div class="vui-h3">Heading</div>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</p>
+	<div class="vui-small-text">Nunc eu fringilla erat, non dignissim neque. Maecenas magna sem, sagittis eu vulputate et, gravida eget dolor.</div>
+</div>
