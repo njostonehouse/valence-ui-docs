@@ -1,18 +1,44 @@
-.page-content {
-	padding: $spacing-unit 0;
+.component-groups {
+	display:inline-block;
+	width: 480px;
+	@media screen and (max-width: 900px), screen and (max-height: 700px) {
+		width: 600px;
+	}
 }
 
-.component-groups > .component-group-items {
-	display: inline-block;
+.component-group {
 	margin-top: 1rem;
 }
 
-.component-group-item {
-	margin-bottom: 1rem;
-	width: 600px;
+.component-group > .component-group-items {
+	margin-bottom: 1.5rem;
 }
 
 .component-group-item-title {
-	font-size: 1.5rem;
-	line-height: 2rem;
+	margin-top: 1rem;
 }
+
+.component-group-item-description {
+	margin: 0 0 .5rem 0;
+}
+
+.component-group-item {
+	border: 1px solid #d3d9e3;
+	border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.component-group-item > div {
+	margin: 1.5rem;
+}
+
+.component-group-link {
+	border: 1px solid;
+	border-color: #f9fafb #d3d9e3 #d3d9e3 #d3d9e3;
+	background-color: #f9fafb;
+	border-radius: 0 0 .3rem .3rem;
+}
+
+.component-group-link > a {
+	margin: .7rem 1.5rem .7rem 1.5rem;
+}
+
