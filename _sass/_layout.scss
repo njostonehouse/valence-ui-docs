@@ -72,6 +72,9 @@
 .stationary-menu-wrapper {
 	float:right;
 	margin-top: -52px;
+	@media screen and (max-width: 900px), screen and (max-height: 700px) {
+		display: none;
+	}
 }
 
 .stationary-menu {
